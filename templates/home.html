@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<style>
+	<!--link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">-->
+    </style>
+
+</head>
+<body>
+
+<header>
+		<div class="container">
+		<div id="brandname">
+		</div>
+
+ </br> </br> </br> </br>  </br> </br>
+
+        </div>
+    <div class="ml-container">
+<!--
+		<p style="color:blue;font-size:28px; text-align: center;">Choose your requirement</p>
+		<br/>  -->
+		<form class="f1" action="LA" method="POST">
+            <button id="LA"><span>Loan Acceptance.</span></button>
+		</form>
+
+            </br> </br> </br> </br>
+		<form class="f1" action="FD" method="POST">
+            <button id="FraudDetect"><span>Fraud Prediction.</span></button>
+		</form>
+
+		  </br> </br> </br>
+		<form class="f1" action="PLR" method="POST">
+            <button id="PLR"><span>Predict Loan Repayment</span></button>
+		</form>
+
+		 </br> </br> </br>  </br> </br>  </br> </br>
+		<form class="f1" action="LR" method="POST">
+            <button id="new1"><span>Loan Risk</span></button>
+		</form>
+
+		  </br> </br> </br> </br> </br> </br> </br>
+		<form class="f1" action="LE" method="POST">
+            <button id="new2"><span>Loan Eligiblity</span></button>
+		</form>
+
+		  </br> </br> </br>
+		<form class="f1" action="MA" method="POST">
+            <button id="new3"><span>Mortgage Analytics</span></button>
+		</form>
+
+		  </br> </br> </br> </br>
+		<form class="f1" action="MS" method="POST">
+            <button id="new4"><span>Marketing Stratergy</span></button>
+		</form>
+
+	</div>
+	</header>
+
+<style>
+        body{
+            background-image: url('static/picture_4.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            text-align: center;
+            padding: 0px;
+        }
+
+	#PLR   {
+  border-radius: 50%;
+  position: absolute;
+  right: 150px;
+  width: 180px;
+  height: 100px;
+  border: 3px solid green;
+
+  background-color: #00ccff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#PLR span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#PLR span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#PLR:hover span {
+  padding-right: 25px;
+}
+
+#PLR:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+        #LA{
+
+  border-radius: 50%;
+  position: absolute;
+  right: 550px;
+  width: 180px;
+  height: 100px;
+  border: 3px solid green;
+
+  background-color: #00ccff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#LA span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#LA span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#LA:hover span {
+  padding-right: 25px;
+}
+
+#LA:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#FraudDetect {
+
+  position: absolute;
+  right: 350px;
+  width: 180px;
+  height: 100px;
+  border: 3px solid green;
+
+  border-radius: 50%;
+  background-color: #00ccff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#FraudDetect span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#FraudDetect span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#FraudDetect:hover span {
+  padding-right: 25px;
+}
+
+#FraudDetect:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#new1   {
+  border-radius: 50%;
+  position: absolute;
+  right: 100px;
+  width: 180px;
+  height: 100px;
+  border: 3px solid green;
+
+  background-color: #00ccff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#new1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#new1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#new1:hover span {
+  padding-right: 25px;
+}
+
+#new1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#new2   {
+  border-radius: 50%;
+  position: absolute;
+  right: 150px;
+  width: 180px;
+  height: 100px;
+  border: 3px solid green;
+
+  background-color: #00ccff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#new2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#new2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#new2:hover span {
+  padding-right: 25px;
+}
+
+#new2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#new3   {
+  border-radius: 50%;
+  position: absolute;
+  right: 350px;
+  width: 180px;
+  height: 100px;
+  border: 3px solid green;
+
+  background-color: #00ccff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#new3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#new3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#new3:hover span {
+  padding-right: 25px;
+}
+
+#new3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#new4   {
+  border-radius: 50%;
+  position: absolute;
+  right: 550px;
+  width: 180px;
+  height: 100px;
+  border: 3px solid green;
+
+  background-color: #00ccff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#new4 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#new4 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#new4:hover span {
+  padding-right: 25px;
+}
+
+#new4:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+</body>
+</html>

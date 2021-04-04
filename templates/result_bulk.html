@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <body style=" background-image: url('static/bulk_up_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+  </br>
+  <tr>
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+  <tr>
+<div class="sub-div">
+    <h1> Results for our file records </h1>
+    <br>
+			<style>
+					.sub-div{
+                       text-align: center;
+                  padding: 10px;
+                }
+
+                .lower_buttons{
+                text-align: centre;
+                font-size: 23px;
+
+                }
+
+					table, th, td {
+					  border: 1px solid black;
+					  border-collapse: collapse;
+					  margin-left: auto;
+                       margin-right: auto;
+					}
+					th, td {
+					  padding: 15px;
+					  text-align: left;
+					  border: 1px solid #000;
+  					border-spacing: 0;
+					}
+					#t01 {
+						  width: 100%;
+						  background-color: red;
+						}
+			</style>
+</head>
+<body>
+
+{% for table in tables %}
+            {{ table|safe }}
+{% endfor %}
+</body>
+    </br> </br>
+    <div class="lower_buttons">
+
+        <form action="/Down_Bulk_File" method="GET">
+            <label class="col-sm-6 col-form-label"><B>Full Bulk File </B></label>
+            <button style="margin-left:20px; padding: 6px 14px; font-size: 16px; font-weight: bold;" type="submit" name="" >Download</button>
+        </form>
+</br>
+      <form  action="show_graph" method="POST" enctype = "multipart/form-data">
+          <label class="col-sm-6 col-form-label"><B>Visualisation&nbsp;</B></label>
+            <input style="margin-left:20px; padding: 6px 14px; font-size: 16px; font-weight: bold;" id="sub" type="submit" value="&nbsp;&nbsp;&nbsp;Graph&nbsp;&nbsp;&nbsp;&nbsp;">
+     </form>
+        </div>
+
+</div>
+</body>
+</html>

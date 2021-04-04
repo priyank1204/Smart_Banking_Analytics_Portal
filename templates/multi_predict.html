@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<style>
+  #inputFields{
+  float:right;
+  font-size:20px;
+  }
+
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+{% if message == 'FD'%}
+  <body style=" background-image: url('static/Fraud_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+      </br>
+  <tr>
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+
+    <div style = "margin:auto;"  >
+      <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Fraud Prediction in Financial Payment Services</h1><br>
+        <br>
+      <div id="myDIV">
+		  <div style = "margin:auto; width: 48%; border: 3px solid grey; padding: 25px; "  method="POST" enctype = "multipart/form-data">
+        <div class="mb-3 row">
+            <h2 style="text-align: center; color:black ; ">For Bulk Users</h2></br></br></br>
+
+              <div style="font-size:18px;" class="mb-3 row">
+          <label  style="margin-left:220px; font-size:30px; color:yellow;" for="Upload_csv" class="col-sm-6 col-form-label"><B>Upload csv/excel:</B></label>
+                 </br> </br></br>
+           <form class="" action="bulk_predict" method="POST" enctype = "multipart/form-data">
+          <div style="margin-left:140px;" class="col-sm-8">
+            <input id="second" type="file" name="file" value="" autocomplete="off" accept=".csv, application/vnd.ms-excel" required >
+             <input type="submit" name="" value="Submit">
+          </div>
+           </form>
+        </div>
+              </div> </div>
+</div> </div>
+
+    </br> </br>
+  <button style="margin-left:650px;" id="last" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1gIe7LAlWFYP6L-scwYmwRBCS1ovZxHSc';">
+   			Download Sample Bulk File
+  		  </button>
+    </body>
+
+{% elif message == 'LA'%}
+<body style=" background-image: url('static/LA_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+</br>
+    <tr>
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+
+    <div style = "margin:auto;"  >
+      <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Loan Acceptance Prediction</h1><br>
+        <br>
+
+      <div id="myDIV">
+
+		  <div style = "margin:auto; width: 48%; border: 3px solid grey; padding: 25px; "  method="POST" enctype = "multipart/form-data">
+
+        <div class="mb-3 row">
+
+            <h2 style="text-align: center; color:black ; ">For Bulk Users</h2></br></br></br>
+
+              <div style="font-size:18px;" class="mb-3 row">
+          <label  style="margin-left:220px; font-size:30px; color:yellow;" for="Upload_csv" class="col-sm-6 col-form-label"><B>Upload csv/excel:</B></label>
+                 </br> </br></br>
+           <form class="" action="LA_bulk_predict" method="POST" enctype = "multipart/form-data">
+          <div style="margin-left:140px;" class="col-sm-8">
+            <input id="second" type="file" name="file" value="" autocomplete="off" accept=".csv, application/vnd.ms-excel" required >
+             <input type="submit" name="" value="Submit">
+          </div>
+           </form>
+        </div>  </div>
+   </div> </div>
+    </div>
+      </br> </br>
+  <button style="margin-left:650px;" id="last" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1axRrZ113PL8xwmhFbyN2tCfUBzC6L5Tg';">
+   			Download Sample Bulk File
+  		  </button>
+    </body>
+
+{% elif message == 'LE'%}
+ <body style=" background-image: url('static/LE_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+   </br>
+  <tr>
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+
+    <div style = "margin:auto;" >
+      <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Loan Eligibility Prediction</h1><br>
+        <br>
+
+      <div id="myDIV">
+		  <div style = "margin:auto; width: 48%; border: 3px solid grey; padding: 25px; "  method="POST" enctype = "multipart/form-data">
+
+        <div class="mb-3 row">
+            <h2 style="text-align: center; color:black ; ">For Bulk Users</h2></br></br></br>
+              <div style="font-size:18px;" class="mb-3 row">
+          <label  style="margin-left:220px; font-size:30px; color:yellow;" for="Upload_csv" class="col-sm-6 col-form-label"><B>Upload csv/excel:</B></label>
+                 </br> </br></br>
+           <form class="" action="LE_bulk_predict" method="POST" enctype = "multipart/form-data">
+          <div style="margin-left:140px;" class="col-sm-8">
+            <input id="second" type="file" name="file" value="" autocomplete="off" accept=".csv, application/vnd.ms-excel" required >
+             <input type="submit" name="" value="Submit">
+          </div>
+           </form>
+        </div> </div>
+</div> </div>
+    </div>
+          </br> </br>
+  <button style="margin-left:650px;" id="last" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1RP3IukhseW9aq7YjTzLjcUmaRZuah019';">
+   			Download Sample Bulk File
+  		  </button>
+    </body>
+
+{% elif message == 'Lrisk'%}
+<body style=" background-image: url('static/lrisk_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+   </br>
+  <tr>
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+
+    <div style = "margin:auto;"  >
+      <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Loan Risk Prediction</h1><br>
+        <br>
+
+      <div id="myDIV">
+		  <div style = "margin:auto; width: 48%; border: 3px solid grey; padding: 25px; "  method="POST" enctype = "multipart/form-data">
+        <div class="mb-3 row">
+            <h2 style="text-align: center; color:black ; ">For Bulk Users</h2></br></br></br>
+
+              <div style="font-size:18px;" class="mb-3 row">
+          <label  style="margin-left:220px; font-size:30px; color:yellow;" for="Upload_csv" class="col-sm-6 col-form-label"><B>Upload csv/excel:</B></label>
+                 </br> </br></br>
+           <form class="" action="LR_bulk_predict" method="POST" enctype = "multipart/form-data">
+          <div style="margin-left:140px;" class="col-sm-8">
+            <input id="second" type="file" name="file" value="" autocomplete="off" accept=".csv, application/vnd.ms-excel" required >
+             <input type="submit" name="" value="Submit">
+          </div>
+           </form>
+        </div>  </div>
+    </div> </div>
+</div>
+        </br> </br>
+  <button style="margin-left:650px;" id="last" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1L9OmXrnlntlYPNfnEpzIQpb_Ya9zshUC';">
+   			Download Sample Bulk File
+  		  </button>
+  </body>
+
+{% elif message == 'MA'%}
+<body style=" background-image: url('static/Mort_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+    </br>
+  <tr>
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+
+    <div style = "margin:auto;"  >
+      <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Mortgage Analytics</h1><br>
+        <br>
+
+      <div id="myDIV">
+		  <div style = "margin:auto; width: 48%; border: 3px solid grey; padding: 25px; "  method="POST" enctype = "multipart/form-data">
+        <div class="mb-3 row">
+            <h2 style="text-align: center; color:black ; ">For Bulk Users</h2></br></br></br>
+
+              <div style="font-size:18px;" class="mb-3 row">
+          <label  style="margin-left:220px; font-size:30px; color:yellow;" for="Upload_csv" class="col-sm-6 col-form-label"><B>Upload csv/excel:</B></label>
+                 </br> </br></br>
+           <form class="" action="MA_bulk_predict" method="POST" enctype = "multipart/form-data">
+          <div style="margin-left:140px;" class="col-sm-8">
+            <input id="second" type="file" name="file" value="" autocomplete="off" accept=".csv, application/vnd.ms-excel" required >
+             <input type="submit" name="" value="Submit">
+          </div>
+           </form>
+        </div> </div>
+    </div> </div>
+</div>
+        </br> </br>
+  <button style="margin-left:650px;" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1Psnz-iZH4N9x1eAIXIn_2_xNwmvlJYXI';">
+   			Download Sample Bulk File
+  		  </button>
+    </body>
+{% elif message == 'MS'%}
+  <body style=" background-image: url('static/Fraud_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+      </br>
+  <tr>
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+
+    <div style = "margin:auto;"  >
+      <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Marketing Stratergy</h1><br>
+        <br>
+      <div id="myDIV">
+		  <div style = "margin:auto; width: 48%; border: 3px solid grey; padding: 25px; "  method="POST" enctype = "multipart/form-data">
+        <div class="mb-3 row">
+            <h2 style="text-align: center; color:black ; ">For Bulk Users</h2></br></br></br>
+
+              <div style="font-size:18px;" class="mb-3 row">
+          <label  style="margin-left:220px; font-size:30px; color:yellow;" for="Upload_csv" class="col-sm-6 col-form-label"><B>Upload csv/excel:</B></label>
+                 </br> </br></br>
+           <form class="" action="MS_bulk_predict" method="POST" enctype = "multipart/form-data">
+          <div style="margin-left:140px;" class="col-sm-8">
+            <input id="second" type="file" name="file" value="" autocomplete="off" accept=".csv, application/vnd.ms-excel" required >
+             <input type="submit" name="" value="Submit">
+          </div>
+           </form>
+        </div>
+              </div> </div>
+</div> </div>
+
+    </br> </br>
+  <button style="margin-left:650px;" id="last" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1KqW1NRA9FKdnl2yXwIqSQgqIER_9loT1';">
+   			Download Sample Bulk File
+  		  </button>
+    </body>
+{% elif message == 'PLR'%}
+<body style=" background-image: url('static/Mort_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+    </br>
+  <tr>
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+
+    <div style = "margin:auto;"  >
+      <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Predict Loan Repayment</h1><br>
+        <br>
+
+      <div id="myDIV">
+		  <div style = "margin:auto; width: 48%; border: 3px solid grey; padding: 25px; "  method="POST" enctype = "multipart/form-data">
+        <div class="mb-3 row">
+            <h2 style="text-align: center; color:black ; ">For Bulk Users</h2></br></br></br>
+
+              <div style="font-size:18px;" class="mb-3 row">
+          <label  style="margin-left:220px; font-size:30px; color:yellow;" for="Upload_csv" class="col-sm-6 col-form-label"><B>Upload 6 csv files:</B></label>
+                 </br> </br></br>
+           <form class="" action="PLR_bulk_predict" method="POST" enctype = "multipart/form-data">
+          <div style="margin-left:140px;" class="col-sm-8">
+            <input id="second" type="file" name="file[]" multiple="" value="" autocomplete="off" accept=".csv, application/vnd.ms-excel" required >
+             <input type="submit" name="" value="Submit">
+          </div>
+           </form>
+        </div> </div>
+    </div> </div>
+</div>
+        </br>
+    </body>
+  {% endif %}
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <title>Main_Dash</title>
+</head>
+<style>
+  #inputFields{
+  float:right;
+  font-size:20px;
+  }
+  p { margin:0 }
+</style>
+
+{% if message == 'FD'%}
+  <body style=" background-image: url('static/Fraud_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+  </br>
+   <form style="margin-left:20px;" action="home1" method="post" name="home" id="home">
+        <input style="padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home"></a>
+        </form>
+
+     <h1 style="text-align: center; color:black ;font-size:35px; ">Fraud Prediction in Financial Payment Services</h1><br>
+     </br>
+
+       <div style="font-size:20px;  text-align:center;">
+<p>In this project, we aim to build Automatic detection system of possible fraud scenarios.</p>
+<p>Benifits :- Find hidden and implicit correlation in data.</p>
+           <p>:- Reduce number of verification measures and realtime processing.</p>  </div>
+      <br><br><br>
+    <div style = "margin:auto; width: 38%; border: 3px solid grey; padding: 25px;" >
+        </br>
+
+         <div class="mb-3 row">
+              <label id="inputFields" for="single_predict" class="col-sm-6 col-form-label"><B>Prediction For Single User:</B></label>
+          <div class="col-sm-6">
+        <form action="FD_single_predict" method="POST" enctype = "multipart/form-data">
+              <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="Single User&nbsp;">
+           </form>
+          </div>
+         </div>
+
+              </br>
+         <div class="mb-3 row">
+            <label id="inputFields" for="multi_predict" class="col-sm-6 col-form-label"><B>Prediction For Bulk User:</B></label>
+          <div class="col-sm-6">
+           <form  action="FD_multi_predict" method="POST" enctype = "multipart/form-data">
+            <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="&nbsp;&nbsp;Bulk User&nbsp;&nbsp;">
+           </form>
+          </div>
+         </div>
+
+          </br>
+        <div class="mb-3 row">
+            <label id="inputFields" for="graph" class="col-sm-6 col-form-label"><B>Visualization of Data:</B></label>
+          <div class="col-sm-6">
+          <form  action="FD_data_graph" method="POST" enctype = "multipart/form-data">
+            <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;Graph&nbsp;&nbsp;&nbsp;&nbsp;">
+           </form>
+          </div>
+        </div>
+        </div>
+  <br>
+   <div class="container mt-3 pb-3 text-center d-flex justify-content-center">
+    <table class="table-sm table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Accuracy</th>
+            <th scope="col">Precision</th>
+            <th scope="col">Recall</th>
+            <th scope="col">F1-Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">0.99</th>
+            <th scope="row">0.97</th>
+            <th scope="row">0.99</th>
+            <th scope="row">0.98</th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+    </body>
+
+{% elif message == 'LA'%}
+ <body style=" background-image: url('static/LA_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+
+     </br>
+   <form style="margin-left:20px;" action="home1" method="post" name="home" id="home">
+        <input style="padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home"></a>
+        </form>
+     <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Loan Acceptance Prediction</h1><br>
+
+   <div style="font-size:20px;  text-align:center;">
+       <p>AI and Big Data are rapidly forcing their way to the top of the priority list for digital transformation in Banking.</p>
+        <p>In this project, we aim to predict whether a personal loan marketing campaign run by a bank results in conversion of its depositors to its personal loan customers.
+        </p><p>
+        This project would assist the marketing team of the banks to optimally target their customers and reduce their marketing expenditure, and increase their profits.
+             </p>
+   </div>
+        <br><br><br>
+    <div style = "margin:auto; width: 38%; border: 3px solid grey; padding: 25px;" >
+
+         <div class="mb-3 row">
+             <label id="inputFields" for="single_predict" class="col-sm-6 col-form-label"><B>Prediction For Single User:</B></label>
+          <div class="col-sm-6">
+        <form action="LA_single_predict" method="POST" enctype = "multipart/form-data">
+              <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="Single User&nbsp;">
+           </form>
+          </div>
+         </div>
+
+              </br>
+         <div class="mb-3 row">
+            <label id="inputFields" for="multi_predict" class="col-sm-6 col-form-label"><B>Prediction For Bulk User:</B></label>
+          <div class="col-sm-6">
+           <form  action="LA_multi_predict" method="POST" enctype = "multipart/form-data">
+            <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="&nbsp;&nbsp;Bulk User&nbsp;&nbsp;">
+           </form>
+          </div>
+         </div>
+
+
+          </br>
+        <div class="mb-3 row">
+            <label id="inputFields" for="graph" class="col-sm-6 col-form-label"><B>Visualization of Data:</B></label>
+          <div class="col-sm-6">
+          <form  action="LA_data_graph" method="POST" enctype = "multipart/form-data">
+            <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;Graph&nbsp;&nbsp;&nbsp;&nbsp;">
+           </form>
+          </div>
+        </div>
+        </div>
+  <br>
+   <div class="container mt-3 pb-3 text-center d-flex justify-content-center">
+    <table class="table-sm table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Accuracy</th>
+            <th scope="col">Precision</th>
+            <th scope="col">Recall</th>
+            <th scope="col">F1-Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">0.99</th>
+            <th scope="row">1.0</th>
+            <th scope="row">0.99</th>
+            <th scope="row">0.99</th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+    </body>
+
+{% elif message == 'PLR'%}
+<body style=" background-image: url('static/lrisk_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+     </br>
+   <form style="margin-left:20px;" action="home1" method="post" name="home" id="home">
+        <input style="padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home"></a>
+        </form>
+
+     <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Predict Loan Repayment</h1><br>
+
+            <div style="font-size:20px;  text-align:center;">
+                <p>Loan defaulters can cause huge loss to banks</p>
+                <p>This models automates system with machine learning algorithms to ensure clients capable of repayment are </p>
+                <p>not rejected and that loans are given with a principle,maturity and repayment calendar that will empower </p>
+                <p>their clients to be successful..</p>
+                </br>
+    <div style = "margin:auto; width: 38%; border: 3px solid grey; padding: 25px;" >
+         <div class="mb-3 row">
+            <label id="inputFields" for="single_predict" class="col-sm-6 col-form-label"><B>Prediction For Bulk User:</B></label>
+          <div class="col-sm-6">
+           <form  action="PLR_multi_predict" method="POST" enctype = "multipart/form-data">
+            <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="&nbsp;&nbsp;Bulk User&nbsp;&nbsp;">
+           </form>
+          </div>
+         </div>
+    </div>
+                <br>
+                <p><B>Files Required:</B></p>
+                <p>1) application.csv
+                   2) bureau.csv</p>
+                <p>3) previous_application.csv
+                   4) POS_CASH_BALANCE.csv</p>
+                <p>5) credit_card_balance.csv
+                   6) installments_payment.csv</p>
+            </div>
+ <br>
+   <div class="container mt-3 pb-3 text-center d-flex justify-content-center">
+    <table class="table-sm table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Accuracy</th>
+            <th scope="col">Precision</th>
+            <th scope="col">Recall</th>
+            <th scope="col">F1-Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">0.91</th>
+            <th scope="row">1.0</th>
+            <th scope="row">0.76</th>
+            <th scope="row">0.90</th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+{% elif message == 'LE'%}
+<body style=" background-image: url('static/LE_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+  </br>
+   <form style="margin-left:20px;" action="home1" method="post" name="home" id="home">
+        <input style="padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home"></a>
+        </form>
+
+     <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Loan Eligibility Prediction</h1><br>
+    </br>
+         <div style="font-size:20px;  text-align:center;">
+             <p>Employing various machine learning models for loan evaluation to decide</p>
+             <p>whether to reject or approve a loan to a borrower based on their credit score and ability to repay.</p>
+             <p>Effective and thorough evaluation of credit risk can result in minimalizing risk of defaulters for the financial institutes.</p>
+         </div>
+  <br><br>
+
+    <div style = "margin:auto; width: 38%; border: 3px solid grey; padding: 25px;" >
+        </br>
+
+         <div class="mb-3 row">
+              <label id="inputFields" for="single_predict" class="col-sm-6 col-form-label"><B>Prediction For Single User:</B></label>
+          <div class="col-sm-6">
+        <form action="LE_single_predict" method="POST" enctype = "multipart/form-data">
+              <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="Single User&nbsp;">
+           </form>
+          </div>
+         </div>
+
+              </br>
+         <div class="mb-3 row">
+            <label id="inputFields" for="multi_predict" class="col-sm-6 col-form-label"><B>Prediction For Bulk User:</B></label>
+          <div class="col-sm-6">
+           <form  action="LE_multi_predict" method="POST" enctype = "multipart/form-data">
+            <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="&nbsp;&nbsp;Bulk User&nbsp;&nbsp;">
+           </form>
+          </div>
+         </div>
+
+          </br>
+        <div class="mb-3 row">
+            <label id="inputFields" for="graph" class="col-sm-6 col-form-label"><B>Visualization of Data:</B></label>
+          <div class="col-sm-6">
+          <form  action="LE_data_graph" method="POST" enctype = "multipart/form-data">
+            <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;Graph&nbsp;&nbsp;&nbsp;&nbsp;">
+           </form>
+          </div>
+        </div>
+    </div>
+ <br>
+   <div class="container mt-3 pb-3 text-center d-flex justify-content-center">
+    <table class="table-sm table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Accuracy</th>
+            <th scope="col">Precision</th>
+            <th scope="col">Recall</th>
+            <th scope="col">F1-Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">0.85</th>
+            <th scope="row">0.80</th>
+            <th scope="row">0.97</th>
+            <th scope="row">0.86</th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+    </body>
+
+{% elif message == 'MA'%}
+<body style=" background-image: url('static/Mort_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+  </br>
+   <form style="margin-left:20px;" action="home1" method="post" name="home" id="home">
+        <input style="padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home"></a>
+        </form>
+
+     <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Mortgage Analytics</h1><br>
+    </br>
+    <div style="font-size:20px;  text-align:center;">
+        <p>This solution uses analytics to assess applicant and property profile.</p>
+         <p>Benifits:-</p>
+        <p>:- Results in reduction in manual judgement, bribing, bias and mistakes.</p>
+         <p>:- Less paperwork, Less time lapses, reduces operating costs.</p>  </div>
+      <br><br>
+
+    <div style = "margin:auto; width: 38%; border: 3px solid grey; padding: 25px;" >
+
+          <div class="mb-3 row">
+              <label id="inputFields" for="single_predict" class="col-sm-6 col-form-label"><B>Prediction For Single User:</B></label>
+          <div class="col-sm-6">
+        <form action="MA_single_predict" method="POST" enctype = "multipart/form-data">
+              <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="Single User&nbsp;">
+           </form>
+          </div>
+         </div>
+
+         </br>
+         <div class="mb-3 row">
+            <label id="inputFields" for="multi_predict" class="col-sm-6 col-form-label"><B>Prediction For Bulk User:</B></label>
+          <div class="col-sm-6">
+           <form  action="MA_multi_predict" method="POST" enctype = "multipart/form-data">
+            <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="&nbsp;&nbsp;Bulk User&nbsp;&nbsp;">
+           </form>
+          </div>
+         </div>
+
+          </br>
+        <div class="mb-3 row">
+            <label id="inputFields" for="graph" class="col-sm-6 col-form-label"><B>Visualization of Data:</B></label>
+          <div class="col-sm-6">
+          <form  action="MA_data_graph" method="POST" enctype = "multipart/form-data">
+            <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;Graph&nbsp;&nbsp;&nbsp;&nbsp;">
+           </form>
+          </div>
+        </div>
+        </div>
+ <br>
+   <div class="container mt-3 pb-3 text-center d-flex justify-content-center">
+    <table class="table-sm table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Accuracy</th>
+            <th scope="col">Precision</th>
+            <th scope="col">Recall</th>
+            <th scope="col">F1-Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">0.95</th>
+            <th scope="row">1.0</th>
+            <th scope="row">0.98</th>
+            <th scope="row">0.99</th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+    </body>
+
+{% elif message == 'Lrisk'%}
+<body style=" background-image: url('static/lrisk_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+     </br>
+   <form style="margin-left:20px;" action="home1" method="post" name="home" id="home">
+        <input style="padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home"></a>
+        </form>
+
+     <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Loan Risk Prediction</h1><br>
+
+            <div style="font-size:20px;  text-align:center;">
+                <p>Loan Risk analysis is based on probability of default and loss, given default models,</p>
+                <p>tools that instantaneously deliver essential risk metrics for loan assessment and better provisioning.</p>
+                <p>Benefits:-</p>
+                <p>Data quality and better Customer Segmentation.</p>
+                <p>:- Enhanced Customer experience and efficient calculation of Creditworthiness of customer using real-time data.</p>
+                </br>
+    <div style = "margin:auto; width: 38%; border: 3px solid grey; padding: 25px;" >
+
+         <div class="mb-3 row">
+              <label id="inputFields" for="single_predict" class="col-sm-6 col-form-label"><B>Prediction For Single User:</B></label>
+          <div class="col-sm-6">
+        <form action="lrisk_single_predict" method="POST" enctype = "multipart/form-data">
+              <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="Single User&nbsp;">
+           </form>
+          </div>
+         </div>
+        <br>
+
+         <div class="mb-3 row">
+            <label id="inputFields" for="multi_predict" class="col-sm-6 col-form-label"><B>Prediction For Bulk User:</B></label>
+          <div class="col-sm-6">
+           <form  action="lrisk_multi_predict" method="POST" enctype = "multipart/form-data">
+            <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="&nbsp;&nbsp;Bulk User&nbsp;&nbsp;">
+           </form>
+          </div>
+         </div> <br>
+
+        <div class="mb-3 row">
+            <label id="inputFields" for="graph" class="col-sm-6 col-form-label"><B>Visualization of Data:</B></label>
+          <div class="col-sm-6">
+          <form  action="Lrisk_data_graph" method="POST" enctype = "multipart/form-data">
+            <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;Graph&nbsp;&nbsp;&nbsp;&nbsp;">
+           </form>
+          </div>
+        </div>
+        </div>
+                 <br>
+   <div class="container mt-3 pb-3 text-center d-flex justify-content-center">
+    <table class="table-sm table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Accuracy</th>
+            <th scope="col">Precision</th>
+            <th scope="col">Recall</th>
+            <th scope="col">F1-Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">0.95</th>
+            <th scope="row">0.99</th>
+            <th scope="row">0.98</th>
+            <th scope="row">0.99</th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+    </body>
+
+{% elif message == 'MS'%}
+<body style=" background-image: url('static/Mort_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+  </br>
+   <form style="margin-left:20px;" action="home1" method="post" name="home" id="home">
+        <input style="padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home"></a>
+        </form>
+
+     <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Marketing Stratergy</h1><br>
+    </br>
+    <div style="font-size:20px;  text-align:center;">
+         <p>Benifits:-</p>
+        <p>:- Results in reduction in manual judgement, bribing, bias and mistakes.</p>
+         <p>:- Less paperwork, Less time lapses, reduces operating costs.</p>  </div>
+      <br><br>
+
+    <div style = "margin:auto; width: 38%; border: 3px solid grey; padding: 25px;" >
+              </br>
+          <div class="mb-3 row">
+              <label id="inputFields" for="single_predict" class="col-sm-6 col-form-label"><B>Prediction For Single User:</B></label>
+          <div class="col-sm-6">
+        <form action="MS_single_predict" method="POST" enctype = "multipart/form-data">
+              <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="Single User&nbsp;">
+           </form>
+          </div>
+         </div>
+
+         </br>
+         <div class="mb-3 row">
+            <label id="inputFields" for="multi_predict" class="col-sm-6 col-form-label"><B>Prediction For Bulk User:</B></label>
+          <div class="col-sm-6">
+           <form  action="MS_multi_predict" method="POST" enctype = "multipart/form-data">
+            <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="&nbsp;&nbsp;Bulk User&nbsp;&nbsp;">
+           </form>
+          </div>
+         </div>
+
+          </br>
+        <div class="mb-3 row">
+            <label id="inputFields" for="graph" class="col-sm-6 col-form-label"><B>Visualization of Data:</B></label>
+          <div class="col-sm-6">
+          <form  action="MS_data_graph" method="POST" enctype = "multipart/form-data">
+            <input class="btn btn-warning" style="margin-left:70px;" id="sub" type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;Graph&nbsp;&nbsp;&nbsp;&nbsp;">
+           </form>
+          </div>
+        </div>
+        </div>
+ <br>
+   <div class="container mt-3 pb-3 text-center d-flex justify-content-center">
+    <table class="table-sm table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Accuracy</th>
+            <th scope="col">Precision</th>
+            <th scope="col">Recall</th>
+            <th scope="col">F1-Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">0.94</th>
+            <th scope="row">0.95</th>
+            <th scope="row">0.91</th>
+            <th scope="row">0.93</th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+    </body>
+  {% endif %}
+</html>

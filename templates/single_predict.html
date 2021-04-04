@@ -1,0 +1,711 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<style>
+  #inputFields{
+  font-size:20px;
+  }
+</style>
+ {% if message == 'LA'%}
+ <body style=" background-image: url('static/LA_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+  </br>
+  <tr>
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+
+  <div style = "margin:auto;">
+      <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Loan Acceptance Prediction</h1><br>
+   {% if prediction_LA == 1%}
+	<h2 style="color:blue;font-size:30px;text-align: center">==== Customer Accepted ====</h2>
+	{% elif prediction_LA == 0%}
+	<h2 style="color:blue;font-size:30px;text-align: center">==== Customer Rejected ====</h2>
+	{% endif %}
+      <div id="myDIV">
+		  <form style = "margin:auto; width: 48%; border: 3px solid grey; padding: 25px; " action="predict_LA" method="POST" enctype = "multipart/form-data">
+        <div class="mb-3 row">
+             <h2 style="text-align: center; color:black ; ">For Single Users</h2></br></br></br>
+          <label style="font-size:20px;" for="Age" class="col-sm-3 col-form-label"><B>Age :</B></label>
+          <div class="col-sm-3">
+            <input placeholder="Enter Age" id="Age" type="number" min="0" max="" name="Age" class="form-control" required>
+          </div>
+          <label id="inputFields" for="Experience" class="col-sm-3 col-form-label"><B>Experience :</B></label>
+          <div class="col-sm-3">
+            <input placeholder="Enter Experience" id="Experience" type="number" min="0" max="" name="Experience" class="form-control" required>
+          </div>
+                 </div>
+
+        <div class="mb-3 row">
+          <label style="font-size:20px;" for="Income" class="col-sm-3 col-form-label"><B>Income :</B></label>
+          <div class="col-sm-3">
+            <input placeholder="Enter Income" id="Income" type="number" min="0" max="" name="Income" class="form-control" required>
+          </div>
+          <label id="inputFields" for="Family" class="col-sm-3 col-form-label"><B>Family:</B></label>
+          <div class="col-sm-3">
+            <input placeholder="Enter Family Size of Customer" id="Family" type="number" min="0" max="" name="Family" class="form-control" required>
+          </div>
+                </div>
+
+        <div class="mb-3 row">
+          <label style="font-size:20px;" for="CCAvg" class="col-sm-3 col-form-label"><B>CCAvg :</B></label>
+          <div class="col-sm-3">
+            <input placeholder="Enter Credit Card Avg" id="CCAvg" type="number" min="0" max="" name="CCAvg" class="form-control" required>
+          </div>
+          <label id="inputFields" for="Education" class="col-sm-3 col-form-label"><B>Education :</B></label>
+          <div class="col-sm-3">
+            <select id="Education" name="Education" class="form-control" required>
+                <option value="" selected disabled hidden>Select</option>
+                <option value ="Undergrad">UnderGraduate</option>
+                <option value ="Graduate">Graduate</option>
+                <option value ="Professional">Advanced/Professional</option>
+              </select>
+          </div>
+                </div>
+
+            <div class="mb-3 row">
+          <label style="font-size:20px;" for="Mortgage" class="col-sm-3 col-form-label"><B>Mortgage :</B></label>
+          <div class="col-sm-3">
+            <input placeholder="Enter Mortgage" id="Mortgage" type="number" min="0" max="" name="Mortgage" class="form-control" required>
+          </div>
+          <label id="inputFields" for="SecuritiesAccount" class="col-sm-3 col-form-label"><B>Securities Account :</B></label>
+          <div class="col-sm-3">
+            <select id="SecuritiesAccount" name="SecuritiesAccount" class="form-control" required>
+                <option value="" selected disabled hidden>Select</option>
+                <option value ="Yes">Yes</option>
+                <option value ="No">No</option>
+              </select>
+          </div>
+                </div>
+
+                   <div class="mb-3 row">
+          <label id="inputFields" for="CDAccount" class="col-sm-3 col-form-label"><B>CD Account :</B></label>
+          <div class="col-sm-3">
+            <select id="CDAccount" name="CDAccount" class="form-control" required>
+                <option value="" selected disabled hidden>Select</option>
+                <option value ="Yes">Yes</option>
+                <option value ="No">No</option>
+              </select>
+          </div>
+          <label id="inputFields" for="Online" class="col-sm-3 col-form-label"><B>Online :</B></label>
+          <div class="col-sm-3">
+            <select id="Online" name="Online" class="form-control" required>
+                <option value="" selected disabled hidden>Select</option>
+                <option value ="Yes">Yes</option>
+                <option value ="No">No</option>
+              </select>
+          </div>
+                </div>
+
+                <div class="mb-3 row">
+          <label id="inputFields" for="CreditCard" class="col-sm-3 col-form-label"><B>Credit Card :</B></label>
+          <div class="col-sm-3">
+            <select id="CreditCard" name="CreditCard" class="form-control" required>
+                <option value="" selected disabled hidden>Select</option>
+                <option value ="Yes">Yes</option>
+                <option value ="No">No</option>
+              </select>
+          </div>
+                </div>
+</div>
+      </br>
+        <input class="btn btn-warning" style="margin-left: 740px" id="sub" type="submit" value="Predict">
+      </form>  </div>
+    </body>
+
+  {% elif message == 'FD'%}
+  <body style=" background-image: url('static/Fraud_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+      </br>
+  <tr>
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+
+      <div style = "margin:auto;">
+      <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Fraud Prediction in Financial Payment Services</h1><br>
+
+	{% if prediction_FD == 1%}
+	<h2 style="color:blue;font-size:30px;text-align: center">===== Fraud =====</h2>
+	{% elif prediction_FD == 0%}
+	<h2 style="color:blue;font-size:30px;text-align: center">===== Trusted =====</h2>
+	{% endif %}
+
+      <div id="myDIV">
+		  <form style = "margin:auto; width: 38%; border: 3px solid grey; padding: 25px; " action="predict_FD" method="POST" enctype = "multipart/form-data">
+        <div class="mb-3 row">
+              <h2 style="text-align: center; color:black ; ">For Single Users</h2></br></br></br>
+          <label id="inputFields" for="step" class="col-sm-6 col-form-label"><B>Step :</B></label>
+          <div class="col-sm-6">
+            <input placeholder="No. of days " id="step" type="number" min="0" max="" name="step" class="form-control" required>
+          </div>
+        </div>
+
+        <div class="mb-3 row">
+          <label id="inputFields" for="age" class="col-sm-6 col-form-label"><B>Age :</B></label>
+          <div class="col-sm-6">
+            <input placeholder="Enter Age" id="age" type="number" min="0" max="" name="age" class="form-control" required>
+          </div>
+        </div>
+
+         <div class="mb-3 row">
+          <label id="inputFields" for="gender" class="col-sm-6 col-form-label"><B>Gender : &nbsp;</B></label>
+          <div class="col-sm-6">
+            <select id="type"name="gender" class="form-control" required>
+              <option value="" selected disabled hidden>Select</option>
+            <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Enterprise">Enterprise</option>
+                <option value="Unknown">Unknown</option>
+            </select>
+          </div>
+        </div>
+
+            <div class="mb-3 row">
+          <label id="inputFields" for="merchant" class="col-sm-6 col-form-label"><B>Merchant :</B></label>
+          <div class="col-sm-6">
+            <input placeholder="Enter in numbers" id="merchant" type="number" min="0" max="" name="merchant" class="form-control" required>
+          </div>  </div>
+
+        <div class="mb-3 row">
+          <label id="inputFields" for="category" class="col-sm-6 col-form-label"><B>Category :</B></label>
+          <div class="col-sm-6">
+            <input placeholder="Enter below 15" id="category" type="number" min="0" max="" name="category" class="form-control" required>
+          </div> </div>
+
+        <div class="mb-3 row">
+          <label id="inputFields" for="amount" class="col-sm-6 col-form-label"><B>Amount :</B></label>
+          <div class="col-sm-6">
+            <input placeholder="Enter Amount" id="amount" type="number" min="0" max="" name="amount" class="form-control" required>
+          </div> </div>
+</div>
+      </br>
+        <input class="btn btn-warning" style="margin-left: 740px" id="sub" type="submit" value="Predict">
+      </form> </div>
+    </body>
+
+   {% elif message == 'LE'%}
+   <body style=" background-image: url('static/LE_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 900px;">
+       </br>
+  <tr>
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+
+      <div style = "margin:auto;"  >
+      <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Loan Eligibility Prediction</h1><br>
+
+	{% if prediction_LE == 1%}
+	<h2 style="color:blue;font-size:30px;text-align: center">=== This loan is eligible ===</h2>
+	{% elif prediction_LE == 0%}
+	<h2 style="color:blue;font-size:30px;text-align: center">== This loan is not eligible ==</h2>
+	{% endif %}
+
+      <div id="myDIV">
+		<form style = "margin:auto; width: 48%; border: 3px solid grey; padding: 25px; " action="predict_LE" method="POST" enctype = "multipart/form-data">
+     <div class="mb-3 row">
+            <label style="font-size:20px;" for="CurrentLoanAmount" class="col-sm-3 col-form-label"><B>Current Loan Amount:</B></label>
+            <div class="col-sm-3">
+              <input placeholder="Enter in Thousands" id="CurrentLoanAmount" type="number" min="0" max="" name="CurrentLoanAmount" class="form-control" required>
+            </div>
+                <label id="inputFields" for="CreditScore" class="col-sm-3 col-form-label"><B>Credit Score:</B></label>
+                <div class="col-sm-3">
+                  <input placeholder="Enter in Numbers" id="CreditScore" type="number" min="0" max="" name="CreditScore" class="form-control" required>
+                </div> </div>
+
+            <div class="mb-3 row">
+                <label style="font-size:20px;" for="AnnualIncome" class="col-sm-3 col-form-label"><B>Annual Income:</B></label>
+                <div class="col-sm-3">
+                  <input placeholder="Enter in Thousands" id="AnnualIncome" type="number" min="0" max="" name="AnnualIncome" class="form-control" required>
+                </div>
+                    <label id="inputFields" for="Yearsincurrentjob" class="col-sm-3 col-form-label"><B>Years in current job:</B></label>
+                    <div class="col-sm-3">
+                      <input placeholder="Enter in Years" id="Yearsincurrentjob" type="number" min="0" max="" name="Yearsincurrentjob" class="form-control" required>
+                    </div> </div>
+
+        <div class="mb-3 row">
+            <label style="font-size:20px;" for="MonthlyDebt" class="col-sm-3 col-form-label"><B>Monthly Debt:</B></label>
+            <div class="col-sm-3">
+                <input placeholder="Enter in Thousands" id="MonthlyDebt" type="number" min="0" max="" name="MonthlyDebt" class="form-control" required>
+            </div>
+                <label id="inputFields" for="YearsofCreditHistory" class="col-sm-3 col-form-label"><B>Years of Credit History:</B></label>
+                <div class="col-sm-3">
+                    <input placeholder="Enter in Months" id="YearsofCreditHistory" type="number" min="0" max="" name="YearsofCreditHistory" class="form-control" required>
+                </div> </div>
+
+        <div class="mb-3 row">
+            <label style="font-size:20px;" for="Monthssincelastdelinquent" class="col-sm-3 col-form-label"><B>Months since last delinquent:</B></label>
+            <div class="col-sm-3">
+                <input placeholder="Enter in Months" id="Monthssincelastdelinquent" type="number" min="0" max="" name="Monthssincelastdelinquent" class="form-control" required>
+            </div>
+                <label id="inputFields" for="NumberofOpenAccounts" class="col-sm-3 col-form-label"><B>Number of Open Accounts:</B></label>
+                <div class="col-sm-3">
+                    <input placeholder="Enter in Numbers" id="NumberofOpenAccounts" type="number" min="0" max="" name="NumberofOpenAccounts" class="form-control" required>
+                </div> </div>
+
+        <div class="mb-3 row">
+            <label style="font-size:20px;" for="NumberofCreditProblems" class="col-sm-3 col-form-label"><B>Number of Credit Problems:</B></label>
+            <div class="col-sm-3">
+                <input placeholder="Enter in Numbers" id="NumberofCreditProblems" type="number" min="0" max="" name="NumberofCreditProblems" class="form-control" required>
+            </div>
+                <label id="inputFields" for="CurrentCreditBalance" class="col-sm-3 col-form-label"><B>Current Credit Balance:</B></label>
+                <div class="col-sm-3">
+                    <input placeholder="Enter in Thousands" id="CurrentCreditBalance" type="number" min="0" max="" name="CurrentCreditBalance" class="form-control" required>
+                </div> </div>
+
+        <div class="mb-3 row">
+            <label style="font-size:20px;" for="MaximumOpenCredit" class="col-sm-3 col-form-label"><B>Maximum Open Credit:</B></label>
+            <div class="col-sm-3">
+                <input placeholder="Enter in Thousands" id="MaximumOpenCredit" type="number" min="0" max="" name="MaximumOpenCredit" class="form-control" required>
+            </div>
+                <label id="inputFields" for="Term_LongTerm" class="col-sm-3 col-form-label"><B>Term_Long Term:</B></label>
+                <div class="col-sm-3">
+                    <input placeholder="Enter in Months" id="Term_LongTerm" type="number" min="0" max="" name="Term_LongTerm" class="form-control" required>
+                </div> </div>
+        </div>
+     </br>
+        <input class="btn btn-warning" style="margin-left: 720px" id="sub" type="submit" value="Predict">
+          </form> </div>
+    </body>
+
+   {% elif message == 'Lrisk'%}
+      <body style=" background-image: url('static/lrisk_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 1050px;">
+    </br>
+  <tr>
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+
+      <div style = "margin:auto;"  >
+      <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Loan Risk Prediction</h1><br>
+
+             {% if prediction_Lrisk == 1%}
+            <h2 style="color:blue;font-size:30px;text-align: center">==== This is a good loan ====</h2>
+            {% elif prediction_Lrisk == 0%}
+            <h2 style="color:blue;font-size:30px;text-align: center">==== This is a risky loan ====</h2>
+            {% endif %}
+
+      <div id="myDIV">
+		  <form style = "margin:auto; width: 48%; border: 3px solid grey; padding: 25px; " action="predict_LR" method="POST" enctype = "multipart/form-data">
+        <div class="mb-3 row">
+             <h2 style="text-align: center; color:black ; ">For Single Users</h2></br></br></br>
+                    <label style="font-size:20px;" for="LoanAmount" class="col-sm-3 col-form-label"><B>Loan Amount:</B></label>
+                    <div class="col-sm-3">
+                      <input placeholder="Enter in Thousands" id="LoanAmount" type="number" min="0" max="" name="LoanAmount" class="form-control" required>
+                    </div>
+
+                    <label id="inputFields" for="Loan_Amount_Term" class="col-sm-3 col-form-label"><B>Loan Amount Term:</B></label>
+                    <div class="col-sm-3">
+                      <input placeholder="Enter in Months" id="Loan_Amount_Term" type="number" min="0" max="" name="Loan Amount Term" class="form-control" required>
+                    </div>
+                          </div>
+
+                <div class="mb-3 row">
+                    <label style="font-size:20px;" for="Interest_Rate" class="col-sm-3 col-form-label"><B>Interest Rate:</B></label>
+                    <div class="col-sm-3">
+                        <input placeholder="Enter in Percentage" id="Interest_Rate" type="number" min="0" max="" name="Interest_Rate" class="form-control" required>
+                    </div>
+
+                    <label id="inputFields" for="Employment_Years" class="col-sm-3 col-form-label"><B>Employment Years:</B></label>
+                    <div class="col-sm-3">
+                        <input placeholder="Enter in Years" id="Employment_Years" type="number" min="0" max="" name="Employment_Years" class="form-control" required>
+                    </div>
+                            </div>
+
+                <div class="mb-3 row">
+                    <label style="font-size:20px;" for="Annual_Income" class="col-sm-3 col-form-label"><B>Annual Income:</B></label>
+                    <div class="col-sm-3">
+                        <input placeholder="Enter in Thousands" id="Annual_Income" type="number" min="0" max="" name="Annual_Income" class="form-control" required>
+                    </div>
+
+                    <label id="inputFields" for="Debt_to_Income" class="col-sm-3 col-form-label"><B>Debt to Income:</B></label>
+                    <div class="col-sm-3">
+                        <input placeholder="Enter in Thousands" id="Debt_to_Income" type="number" min="0" max="" name="Debt_to_Income" class="form-control" required>
+                    </div>
+                            </div>
+
+                <div class="mb-3 row">
+                    <label style="font-size:20px;" for="Delinquent_2yr" class="col-sm-3 col-form-label"><B>Delinquent 2yr:</B></label>
+                    <div class="col-sm-3">
+                        <input placeholder="Enter Here" id="Delinquent_2yr" type="number" min="0" max="" name="Delinquent_2yr" class="form-control" required>
+                    </div>
+
+                    <label id="inputFields" for="Revolving_Cr_Util" class="col-sm-3 col-form-label"><B>Revolving Cr Util:</B></label>
+                    <div class="col-sm-3">
+                        <input placeholder="Enter in Thousands" id="Revolving_Cr_Util" type="number" min="0" max="" name="Revolving_Cr_Util" class="form-control" required>
+                    </div>
+                            </div>
+
+                <div class="mb-3 row">
+                    <label style="font-size:20px;" for="Total_Accounts" class="col-sm-3 col-form-label"><B>Total Accounts:</B></label>
+                    <div class="col-sm-3">
+                        <input placeholder="Enter Account Count" id="Total_Accounts" type="number" min="0" max="" name="Total_Accounts" class="form-control" required>
+                    </div>
+
+                    <label id="inputFields" for="Longest_Credit_Length" class="col-sm-3 col-form-label"><B>Longest Credit Length:</B></label>
+                    <div class="col-sm-3">
+                        <input placeholder="Enter in Months" id="Longest_Credit_Length" type="number" min="0" max="" name="Longest_Credit_Length" class="form-control" required>
+                    </div>
+                            </div>
+
+                <div class="mb-3 row">
+                    <label style="font-size:20px;" for="Home_Ownership" class="col-sm-3 col-form-label"><B>Home Ownership:</B></label>
+                    <div class="col-sm-3">
+                        <select id="Home_Ownership"name="Home_Ownership" class="form-control" required>
+                        <option value="" selected disabled hidden>Select</option>
+                        <option value ="RENT">Rent</option>
+                        <option value ="OWN">Own</option>
+                        <option value ="MORTGAGE">Mortgage</option>
+                        <option value ="OTHER">Other</option>
+                        <option value ="NONE">None</option>
+                        <option value ="ANY">Any</option>
+                        </select>
+                    </div>
+
+                    <label id="inputFields" for="Verification_Status" class="col-sm-3 col-form-label"><B>Verification Status:</B></label>
+                    <div class="col-sm-3">
+                        <select id="Verification_Status" name="Verification_Status" class="form-control" required>
+                            <option value="" selected disabled hidden>Select</option>
+                            <option value ="VERIFIED - income">VERIFIED - income</option>
+                            <option value ="VERIFIED - income source">VERIFIED - income source</option>
+                            <option value ="not verified">Not Verified</option>
+                        </select>
+                    </div>
+                        </div>
+
+                <div class="mb-3 row">
+                    <label style="font-size:20px;" for="Loan_Purpose" class="col-sm-3 col-form-label"><B>Loan Purpose:</B></label>
+                    <div class="col-sm-3">
+                        <select id="Loan_Purpose"name="Loan_Purpose" class="form-control" required>
+                        <option value="" selected disabled hidden>Select</option>
+                        <option value ="credit_card">credit card</option>
+                        <option value ="car">car</option>
+                        <option value ="small_business">small business</option>
+                        <option value ="other">other</option>
+                        <option value ="wedding">wedding</option>
+                        <option value ="debt_consolidation">debt consolidation</option>
+                        <option value ="home_improvement">home improvement</option>
+                        <option value ="major_purchase">major purchase</option>
+                        <option value ="medical">medical</option>
+                        <option value ="moving">moving</option>
+                        <option value ="vacation">vacation</option>
+                        <option value ="house">house</option>
+                        <option value ="renewable_energy">renewable energy</option>
+                        <option value ="educational">educational</option>
+                        </select>
+                    </div>
+
+                    <label id="inputFields" for="State" class="col-sm-3 col-form-label"><B>State:</B></label>
+                    <div class="col-sm-3">
+                        <select id="State" name="State" class="form-control" required>
+                            <option value="" selected disabled hidden>Select</option>
+                            <option value ="AZ">AZ</option>
+                            <option value ="GA">GA</option>
+                            <option value ="IL">IL</option>
+                            <option value ="CA">CA</option>
+                            <option value ="TX">TX</option>
+                            <option value ="VA">VA</option>
+                            <option value ="MO">MO</option>
+                            <option value ="CT">CT</option>
+                            <option value ="UT">UT</option>
+                            <option value ="FL">FL</option>
+                            <option value ="NY">NY</option>
+                            <option value ="PA">PA</option>
+                            <option value ="MN">MN</option>
+                            <option value ="NJ">NJ</option>
+                            <option value ="OR">OR</option>
+                            <option value ="KY">KY</option>
+                            <option value ="OH">OH</option>
+                            <option value ="SC">SC</option>
+                            <option value ="RI">RI</option>
+                            <option value ="LA">LA</option>
+                            <option value ="MA">MA</option>
+                            <option value ="WA">WA</option>
+                            <option value ="WI">WI</option>
+                            <option value ="AL">AL</option>
+                            <option value ="NV">NV</option>
+                            <option value ="CO">CO</option>
+                            <option value ="MD">MD</option>
+                            <option value ="WV">WV</option>
+                            <option value ="VT">VT</option>
+                            <option value ="MI">MI</option>
+                            <option value ="DC">DC</option>
+                            <option value ="SD">SD</option>
+                            <option value ="NC">NC</option>
+                            <option value ="AR">AR</option>
+                            <option value ="KS">KS</option>
+                            <option value ="NM">NM</option>
+                            <option value ="HI">HI</option>
+                            <option value ="AK">AK</option>
+                            <option value ="OK">OK</option>
+                            <option value ="MT">MT</option>
+                            <option value ="WY">WY</option>
+                            <option value ="NH">NH</option>
+                            <option value ="DE">DE</option>
+                            <option value ="MS">MS</option>
+                            <option value ="TN">TN</option>
+                            <option value ="IA">IA</option>
+                            <option value ="NE">NE</option>
+                            <option value ="ID">ID</option>
+                            <option value ="IN">IN</option>
+                            <option value ="ME">ME</option>
+                        </select>
+             </div> </div>
+        </div>
+    </br>
+       <input class="btn btn-warning" style="margin-left: 740px" id="sub" type="submit" value="Predict">
+      </form>
+       </div>
+    </br>
+    </body>
+
+   {% elif message == 'MA'%}
+   <body style=" background-image: url('static/Mort_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 800px;">
+      </br>
+  <tr>z
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+
+      <div style = "margin:auto;">
+      <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Mortgage Analytics</h1><br>
+        </div>
+      <div style="color:blue;font-size:25px; margin-left: 730px;">
+     	{{prediction_MA}}
+	</div>
+             </br>
+      <div id="myDIV">
+		  <form style = "margin:auto; width: 38%; border: 3px solid grey; padding: 25px; " action="predict_MA" method="POST" enctype = "multipart/form-data">
+
+        <div class="mb-3 row">
+              <h2 style="text-align: center; color:black ; ">For Single Users</h2></br></br></br>
+
+          <label id="inputFields" for="PostCode" class="col-sm-6 col-form-label"><B>PostCode :</B></label>
+          <div class="col-sm-6">
+            <input placeholder="Enter Post Code " id="step" type="number" min="0" max="" name="PostCode" class="form-control" required>
+          </div>
+        </div>
+
+        <div class="mb-3 row">
+          <label id="inputFields" for="Qtr" class="col-sm-6 col-form-label"><B>Qtr :</B></label>
+          <div class="col-sm-6">
+            <input placeholder="Enter QTR" id="age" type="number" min="0" max="" name="Qtr" class="form-control" required>
+          </div>
+        </div>
+
+            <div class="mb-3 row">
+          <label id="inputFields" for="Unit" class="col-sm-6 col-form-label"><B>Unit :</B></label>
+          <div class="col-sm-6">
+            <input placeholder="Enter Unit" id="merchant" type="number" min="0" max="" name="Unit" class="form-control" required>
+          </div>
+        </div>
+
+</div>
+      </br>
+        <input class="btn btn-warning" style="margin-left: 740px" id="sub" type="submit" value="Predict">
+      </form>
+	</body>
+
+{% elif message == 'MS'%}
+ <body style=" background-image: url('static/LA_new_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 950px;">
+  </br>
+  <tr>
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+
+  <div style = "margin:auto;">
+      <h1 style="text-align: center; color:black ;font-size:35px; margin-top:0%; ">Marketing Strategy Prediction</h1><br>
+   {% if prediction_MS == 1%}
+	<h2 style="color:blue;font-size:30px;text-align: center">==== Term Deposit ====</h2>
+	{% elif prediction_MS == 0%}
+	<h2 style="color:blue;font-size:30px;text-align: center">==== Not Subscribed ====</h2>
+	{% endif %}
+      <div id="myDIV">
+
+		  <form style = "margin:auto; width: 48%; border: 3px solid grey; padding: 25px; " action="predict_MS" method="POST" enctype = "multipart/form-data">
+
+          <div class="mb-3 row">
+              <h2 style="text-align: center; color:black ; ">For Single Users</h2></br></br></br>
+          <label style="font-size:20px;" for="age" class="col-sm-3 col-form-label"><B>Age :</B></label>
+          <div class="col-sm-3">
+            <input placeholder="Enter Age" id="age" type="number" min="0" max="" name="age" class="form-control" required>
+          </div>
+          <label id="inputFields" for="last_call_duration" class="col-sm-3 col-form-label"><B>Last Call Duration :</B></label>
+          <div class="col-sm-3">
+            <input placeholder="Enter Last Call Duration" id="last_call_duration" type="number" min="0" max="" name="last_call_duration" class="form-control" required>
+          </div>
+                 </div>
+
+        <div class="mb-3 row">
+          <label style="font-size:20px;" for="contacts_during_campaign" class="col-sm-3 col-form-label"><B>Contacts :</B></label>
+          <div class="col-sm-3">
+            <input placeholder="Enter Contacts " id="contacts_during_campaign" type="number" min="0" max="" name="contacts_during_campaign" class="form-control" required>
+          </div>
+              <label id="inputFields" for="job" class="col-sm-3 col-form-label"><B>Job :</B></label>
+              <div class="col-sm-3">
+                <select id="job" name="job" class="form-control" required>
+                    <option value="" selected disabled hidden>Select</option>
+                    <option value ="salaried">Salaried</option>
+                    <option value ="self_employed">self-employed</option>
+                    <option value ="retired">Retired</option>
+                    <option value ="student">Student</option>
+                    <option value ="unemployed">Unemployed</option>
+                    <option value ="unknown">Other</option>
+              </select>
+            </div>
+            </div>
+
+              <div class="mb-3 row">
+              <label id="inputFields" for="education" class="col-sm-3 col-form-label"><B>Education :</B></label>
+              <div class="col-sm-3">
+                <select id="education" name="education" class="form-control" required>
+                    <option value="" selected disabled hidden>Select</option>
+                    <option value ="primary">Primary</option>
+                    <option value ="secondary">Secondary</option>
+                    <option value ="tertiary">Tertiary</option>
+                    <option value ="illiterate">Illiterate</option>
+                    <option value ="e_unknown">Other</option>
+              </select>
+            </div>
+              <label id="inputFields" for="credit_default" class="col-sm-3 col-form-label"><B>Credit Default :</B></label>
+              <div class="col-sm-3">
+                <select id="credit_default" name="credit_default" class="form-control" required>
+                    <option value="" selected disabled hidden>Select</option>
+                    <option value ="c_yes">Yes</option>
+                    <option value ="c_no">No</option>
+                    <option value ="c_unknown">Other</option>
+              </select>
+            </div>
+            </div>
+
+        <div class="mb-3 row">
+              <label id="inputFields" for="home_loan" class="col-sm-3 col-form-label"><B>Home Loan :</B></label>
+              <div class="col-sm-3">
+                <select id="home_loan" name="home_loan" class="form-control" required>
+                    <option value="" selected disabled hidden>Select</option>
+                     <option value ="h_yes">Yes</option>
+                    <option value ="h_no">No</option>
+                    <option value ="h_unknown">Other</option>
+              </select>
+            </div>
+              <label id="inputFields" for="personal_loan" class="col-sm-3 col-form-label"><B>Personal Loan :</B></label>
+              <div class="col-sm-3">
+                <select id="personal_loan" name="personal_loan" class="form-control" required>
+                    <option value="" selected disabled hidden>Select</option>
+                    <option value ="p_yes">Yes</option>
+                    <option value ="p_no">No</option>
+                    <option value ="p_unknown">Other</option>
+              </select>
+            </div>
+            </div>
+
+        <div class="mb-3 row">
+              <label id="inputFields" for="last_contacted_month" class="col-sm-3 col-form-label"><B>Last Contacted Month :</B></label>
+              <div class="col-sm-3">
+                <select id="last_contacted_month" name="last_contacted_month" class="form-control" required>
+                    <option value="" selected disabled hidden>Select</option>
+                     <option value ="jan_april">Jan-April</option>
+                     <option value ="may_aug">May-Aug</option>
+                     <option value ="sep_oct">sep-oct</option>
+              </select>
+            </div>
+              <label id="inputFields" for="day_of_week" class="col-sm-3 col-form-label"><B>Last Contacted Day :</B></label>
+              <div class="col-sm-3">
+                <select id="day_of_week" name="day_of_week" class="form-control" required>
+                    <option value="" selected disabled hidden>Select</option>
+                    <option value ="mon">Monday</option>
+                    <option value ="tue">Tuesday</option>
+                    <option value ="wed">Wednesday</option>
+                    <option value ="thur">Thursday</option>
+                    <option value ="fri">Friday</option>
+              </select>
+            </div>
+            </div>
+
+            <div class="mb-3 row">
+                <label id="inputFields" for="days_passed" class="col-sm-3 col-form-label"><B>Days Passed :</B></label>
+              <div class="col-sm-3">
+               <select id="days_passed" name="days_passed" class="form-control" required>
+                    <option value="" selected disabled hidden>Select</option>
+                    <option value ="never_contacted">Never</option>
+                    <option value ="recent">Recently</option>
+              </select>
+            </div>
+              <label id="inputFields" for="cbc" class="col-sm-3 col-form-label"><B>Contacts Before Campaign :</B></label>
+              <div class="col-sm-3">
+                   <select id="cbc" name="cbc" class="form-control" required>
+                    <option value="" selected disabled hidden>Select</option>
+                    <option value ="zero">Zero</option>
+                    <option value ="less_than_10">Less Than Ten</option>
+              </select>
+            </div>
+            </div>
+
+        <div class="mb-3 row">
+            <label id="inputFields" for="marital" class="col-sm-3 col-form-label"><B>Marital Status :</B></label>
+              <div class="col-sm-3">
+            <select id="marital" name="marital" class="form-control" required>
+                    <option value="" selected disabled hidden>Select</option>
+                    <option value ="married">Married</option>
+                    <option value ="single">Single</option>
+                    <option value ="divorced">Divorced</option>
+                    <option value ="unknown">Unknown</option>
+              </select>
+            </div>
+      </div>
+      </div>
+      </br>
+        <input class="btn btn-warning" style="margin-left: 740px" id="sub" type="submit" value="Predict">
+      <br><br>
+      </form>
+        </div>
+    </body>
+  {% endif %}
+</html>
+
+

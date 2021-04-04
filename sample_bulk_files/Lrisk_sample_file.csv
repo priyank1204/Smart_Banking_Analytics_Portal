@@ -1,0 +1,526 @@
+RowID,Loan_Amount,Term,Interest_Rate,Employment_Years,Home_Ownership,Annual_Income,Verification_Status,Loan_Purpose,State,Debt_to_Income,Delinquent_2yr,Revolving_Cr_Util,Total_Accounts,Longest_Credit_Length
+1,5000,36 months,10.65,10,RENT,24000,VERIFIED - income,credit_card,AZ,27.65,0,83.7,9,26
+2,2500,60 months,15.27,0.5,RENT,30000,VERIFIED - income source,car,GA,1,0,9.4,4,12
+3,2400,36 months,15.96,10,RENT,12252,not verified,small_business,IL,8.72,0,98.5,10,10
+4,10000,36 months,13.49,10,RENT,49200,VERIFIED - income source,other,CA,20,0,21,37,15
+5,5000,36 months,7.9,3,RENT,36000,VERIFIED - income source,wedding,AZ,11.2,0,28.3,12,7
+6,3000,36 months,18.64,9,RENT,48000,VERIFIED - income source,car,CA,5.35,0,87.5,4,4
+7,5600,60 months,21.28,4,OWN,40000,VERIFIED - income source,small_business,CA,5.55,0,32.6,13,7
+8,5375,60 months,12.69,0.5,RENT,15000,VERIFIED - income,other,TX,18.08,0,36.5,3,7
+9,6500,60 months,14.65,5,OWN,72000,not verified,debt_consolidation,AZ,16.12,0,20.6,23,13
+10,12000,36 months,12.69,10,OWN,75000,VERIFIED - income source,debt_consolidation,CA,10.78,0,67.1,34,22
+11,9000,36 months,13.49,0.5,RENT,30000,VERIFIED - income source,debt_consolidation,VA,10.08,0,91.7,9,7
+12,3000,36 months,9.91,3,RENT,15000,VERIFIED - income source,credit_card,IL,12.56,0,43.1,11,8
+13,10000,36 months,10.65,3,RENT,100000,VERIFIED - income source,other,CA,7.06,0,55.5,29,20
+14,1000,36 months,16.29,0.5,RENT,28000,not verified,debt_consolidation,MO,20.31,0,81.5,23,4
+15,10000,36 months,15.27,4,RENT,42000,not verified,home_improvement,CA,18.6,0,70.2,28,13
+16,3600,36 months,6.03,10,MORTGAGE,110000,not verified,major_purchase,CT,10.52,0,16,42,18
+17,6000,36 months,11.71,1,MORTGAGE,84000,VERIFIED - income,medical,UT,18.44,2,37.73,14,8
+18,9200,36 months,6.03,6,RENT,77385.19,not verified,debt_consolidation,CA,9.86,0,23.1,28,10
+19,21000,36 months,12.42,10,RENT,105000,VERIFIED - income,debt_consolidation,FL,13.22,0,90.3,38,28
+20,10000,36 months,11.71,10,OWN,50000,VERIFIED - income source,credit_card,TX,11.18,0,82.4,21,26
+21,10000,36 months,11.71,5,RENT,50000,not verified,debt_consolidation,CA,16.01,0,91.8,17,8
+22,6000,36 months,11.71,1,RENT,76000,not verified,major_purchase,CA,2.4,0,29.7,7,10
+23,15000,36 months,9.91,2,MORTGAGE,92000,VERIFIED - income,credit_card,IL,29.44,0,93.9,31,9
+24,15000,36 months,14.27,9,RENT,60000,not verified,debt_consolidation,NY,15.22,0,57.6,11,8
+25,5000,60 months,16.77,2,RENT,50004,not verified,other,PA,13.97,3,59.5,22,8
+26,4000,36 months,11.71,10,MORTGAGE,106000,not verified,debt_consolidation,FL,5.63,1,37.7,44,27
+27,8500,36 months,11.71,0.5,RENT,25000,VERIFIED - income source,credit_card,MN,12.19,0,59.1,12,5
+28,4375,36 months,7.51,7,MORTGAGE,17108,VERIFIED - income source,debt_consolidation,NY,20.34,0,86.9,12,24
+29,31825,36 months,7.9,5,MORTGAGE,75000,VERIFIED - income,debt_consolidation,NJ,14.03,0,27.4,26,30
+30,5000,36 months,8.9,2,RENT,24044,VERIFIED - income,debt_consolidation,OR,11.93,0,29.3,16,6
+31,7000,36 months,15.96,7,RENT,34000,VERIFIED - income source,credit_card,CA,6.35,0,60.5,6,4
+32,12400,36 months,10.65,10,RENT,41000,not verified,credit_card,KY,11.8,0,57.2,12,6
+33,10800,36 months,9.91,2,RENT,55596,VERIFIED - income source,moving,CA,5.5,0,13.3,18,11
+34,15000,36 months,7.9,1,RENT,45000,VERIFIED - income,debt_consolidation,OH,8.48,0,50.4,27,7
+35,6000,36 months,12.42,1,RENT,36852,VERIFIED - income source,debt_consolidation,AZ,10.62,0,66.5,12,4
+36,9600,36 months,7.51,4,RENT,68004,VERIFIED - income source,other,SC,6.63,0,18.1,11,8
+37,12000,36 months,7.9,10,RENT,62300,not verified,debt_consolidation,NJ,16.7,0,21,25,17
+38,3000,36 months,18.25,9,MORTGAGE,65000,not verified,other,PA,17.39,0,98.1,22,13
+39,4400,36 months,16.77,10,RENT,55000,not verified,debt_consolidation,RI,20.01,0,99,11,7
+40,6000,36 months,6.03,10,MORTGAGE,45600,not verified,debt_consolidation,LA,5.34,0,32.5,28,16
+41,14000,36 months,9.91,6,RENT,80000,not verified,small_business,MA,10,0,13.4,40,12
+42,5000,36 months,8.9,10,MORTGAGE,100000,VERIFIED - income source,debt_consolidation,OH,16.33,0,62.1,35,16
+43,10000,36 months,10.65,6,RENT,27000,VERIFIED - income,other,NY,11.47,0,52.3,10,5
+44,10000,36 months,6.03,10,RENT,60000,not verified,credit_card,CT,12.74,0,19.5,18,19
+45,11000,36 months,6.62,5,RENT,70000,not verified,debt_consolidation,CT,10.85,0,36.4,7,9
+46,15000,36 months,9.91,8,MORTGAGE,80000,not verified,debt_consolidation,IL,9.12,0,63.7,28,19
+47,25600,36 months,9.91,9,RENT,110000,VERIFIED - income,credit_card,CA,15.71,0,62,27,12
+48,7000,36 months,10.65,0.5,RENT,40000,not verified,debt_consolidation,CA,7.38,0,92.9,12,7
+49,12000,36 months,15.96,4,RENT,50000,not verified,car,CA,20.88,0,90.8,11,5
+50,12000,36 months,9.91,1,RENT,46000,not verified,credit_card,TX,8.11,0,52.1,12,11
+51,21000,60 months,19.91,7,RENT,50000,VERIFIED - income,debt_consolidation,WA,21.58,0,97.6,14,13
+52,16000,60 months,19.91,7,RENT,81000,VERIFIED - income,credit_card,MA,20.52,0,75.1,21,13
+53,10000,36 months,12.42,0.5,OWN,39000,not verified,debt_consolidation,OR,18.58,0,72.7,10,7
+54,10000,36 months,10.65,2,RENT,51400,not verified,credit_card,TX,19.14,0,59.1,24,11
+55,7100,36 months,16.77,1,MORTGAGE,33000,VERIFIED - income,debt_consolidation,TX,24,0,91.2,8,4
+56,17675,60 months,14.65,0.5,RENT,50000,VERIFIED - income source,debt_consolidation,WI,16.46,0,57.4,14,9
+57,8000,36 months,16.77,0.5,RENT,62000,not verified,debt_consolidation,VA,21.64,0,66.9,20,5
+58,10000,60 months,10.65,10,RENT,45996,VERIFIED - income,debt_consolidation,OH,21.73,0,30.1,15,14
+59,3500,36 months,10.65,7,MORTGAGE,55000,not verified,debt_consolidation,OH,5.39,0,45.9,12,6
+60,12500,60 months,17.27,5,RENT,30000,VERIFIED - income source,debt_consolidation,MN,13.16,0,70.8,28,16
+61,16425,36 months,14.27,4,RENT,44544,VERIFIED - income source,debt_consolidation,CA,22.71,0,83.4,18,9
+62,8200,60 months,21.28,4,RENT,75000,VERIFIED - income source,small_business,CA,12.48,0,73.9,11,11
+63,15000,36 months,14.65,2,OWN,61000,VERIFIED - income,credit_card,FL,11.88,0,79.5,18,7
+64,20975,60 months,17.58,5,MORTGAGE,44000,VERIFIED - income,credit_card,GA,18.79,0,79.4,21,11
+65,6400,36 months,16.77,5,RENT,75000,not verified,debt_consolidation,CA,20.22,0,67.5,27,17
+66,3000,36 months,13.49,1,RENT,33600,not verified,debt_consolidation,AL,18.11,0,83.2,7,6
+67,12000,36 months,16.77,3,RENT,50000,not verified,credit_card,MA,20.57,0,97,19,6
+68,14400,36 months,8.9,0.5,OWN,150000,VERIFIED - income source,debt_consolidation,NY,14.85,0,55,38,17
+69,12000,36 months,14.65,10,RENT,90000,not verified,debt_consolidation,NJ,16.56,0,78.5,36,27
+70,11000,36 months,13.49,10,MORTGAGE,48000,VERIFIED - income,debt_consolidation,TX,21.82,0,65,29,12
+71,7250,60 months,21.67,0.5,RENT,75000,VERIFIED - income,debt_consolidation,CA,24.82,0,91.2,19,11
+72,15000,36 months,7.9,1,MORTGAGE,52000,not verified,small_business,TX,9.65,0,6.7,29,8
+73,18000,60 months,19.91,10,MORTGAGE,65000,not verified,debt_consolidation,FL,6.81,0,77.8,40,22
+74,35000,60 months,17.27,3,MORTGAGE,150000,VERIFIED - income,home_improvement,NY,7.51,0,53.3,31,8
+75,10000,36 months,14.27,2,RENT,68000,VERIFIED - income source,credit_card,PA,15.39,0,81.3,15,5
+76,11800,36 months,12.69,6,RENT,42000,VERIFIED - income source,credit_card,NY,9.86,0,74.8,13,15
+77,4500,36 months,6.03,4,RENT,53000,VERIFIED - income source,major_purchase,CA,4.44,0,13.9,17,11
+78,7000,36 months,12.69,10,RENT,35000,VERIFIED - income source,credit_card,CA,11.35,0,82.3,26,11
+79,9200,36 months,12.42,2,RENT,60000,VERIFIED - income source,debt_consolidation,CA,19.96,0,78.7,19,9
+80,4500,60 months,10.65,0.5,MORTGAGE,42000,VERIFIED - income source,car,TX,5.4,0,78.3,9,28
+81,12000,36 months,16.29,9,RENT,88365,VERIFIED - income,debt_consolidation,AZ,16.85,0,96.4,15,15
+82,12000,36 months,13.49,4,RENT,72000,VERIFIED - income source,debt_consolidation,CA,21.33,0,27.6,19,8
+83,12000,36 months,10.65,0.5,RENT,62000,VERIFIED - income,credit_card,TX,23.94,0,78.4,51,9
+84,7000,36 months,10.65,3,MORTGAGE,43680,not verified,credit_card,MN,5.38,0,78.1,11,11
+85,8200,60 months,19.42,3,RENT,120000,VERIFIED - income source,debt_consolidation,NY,2.8,0,88.4,6,4
+86,10500,36 months,12.69,10,RENT,66000,VERIFIED - income,medical,CA,20.73,1,51.2,26,13
+87,7000,36 months,11.71,4,OWN,39120,not verified,debt_consolidation,FL,21.01,0,52.4,26,15
+88,20000,60 months,11.71,4,MORTGAGE,47800,VERIFIED - income,debt_consolidation,VA,10.04,0,46.3,27,10
+89,17500,60 months,17.27,7,MORTGAGE,45000,not verified,credit_card,WA,21.31,0,86.1,26,9
+90,3500,36 months,6.03,10,MORTGAGE,83000,VERIFIED - income,car,IL,2.31,0,13.4,28,25
+91,6200,36 months,9.91,2,RENT,25000,not verified,debt_consolidation,CA,20.64,0,47.7,12,13
+92,6000,36 months,8.9,8,OWN,28800,not verified,debt_consolidation,NJ,13.17,0,36.8,13,6
+93,7200,36 months,9.91,6,RENT,135000,not verified,credit_card,NY,6.12,0,79.6,18,14
+94,9500,36 months,8.9,7,MORTGAGE,50000,not verified,credit_card,TX,8.18,0,60.5,13,6
+95,18825,60 months,16.77,10,RENT,38000,VERIFIED - income,debt_consolidation,TX,23.18,0,79.7,7,7
+96,24000,36 months,10.65,10,RENT,45000,VERIFIED - income,debt_consolidation,CA,14.8,0,55.2,9,21
+97,6000,36 months,13.49,10,RENT,80000,not verified,debt_consolidation,CA,11.58,0,83.8,16,9
+98,6000,36 months,13.49,5,RENT,50000,not verified,debt_consolidation,AZ,15.38,0,91.5,7,7
+99,2100,36 months,12.42,10,MORTGAGE,30000,not verified,vacation,LA,19.72,0,82.9,26,16
+100,5500,36 months,6.62,8,MORTGAGE,110000,VERIFIED - income,small_business,CT,9.69,0,21.9,26,17
+101,11000,36 months,6.62,8,OWN,45608,VERIFIED - income source,debt_consolidation,LA,20.5,0,58.7,11,19
+102,26800,60 months,20.89,3,MORTGAGE,120000,VERIFIED - income,debt_consolidation,FL,12.15,0,48,18,5
+103,8000,36 months,12.69,5,MORTGAGE,35000,not verified,debt_consolidation,IL,10.05,0,97.7,18,9
+104,10000,36 months,18.25,1,RENT,75000,VERIFIED - income source,credit_card,CA,24.14,0,96.3,26,14
+105,8000,36 months,11.71,9,MORTGAGE,35000,VERIFIED - income,credit_card,NV,9.7,0,46.5,8,5
+106,10000,36 months,8.9,6,RENT,24000,VERIFIED - income,debt_consolidation,CA,7,0,49.5,21,11
+107,12000,36 months,11.71,2,MORTGAGE,126000,not verified,debt_consolidation,OH,13.32,0,54.1,38,21
+108,10000,36 months,7.9,1,RENT,43000,not verified,debt_consolidation,CA,25.26,0,37.2,16,8
+109,12000,36 months,9.91,1,RENT,50000,not verified,debt_consolidation,CA,16.44,0,29.3,25,11
+110,19750,36 months,10.65,4,RENT,45000,VERIFIED - income,debt_consolidation,OR,22.8,0,54.2,28,11
+111,10000,36 months,9.91,3,RENT,31200,VERIFIED - income source,debt_consolidation,NY,14.81,0,27,19,6
+112,13650,36 months,12.42,4,RENT,66000,VERIFIED - income,debt_consolidation,NV,24.09,0,56.5,34,10
+113,28000,60 months,19.91,10,RENT,52000,VERIFIED - income,debt_consolidation,TX,20.7,0,87.6,16,23
+114,18000,36 months,7.9,10,RENT,56964,VERIFIED - income source,debt_consolidation,CA,27.55,0,76.6,20,12
+115,2500,36 months,14.27,7,RENT,49500,VERIFIED - income source,debt_consolidation,FL,10.33,0,37.7,20,7
+116,21000,60 months,20.3,10,RENT,70000,VERIFIED - income,credit_card,CO,23.21,0,70.7,25,20
+117,35000,36 months,8.9,6,MORTGAGE,125000,VERIFIED - income,debt_consolidation,CA,22.71,0,34.8,32,11
+118,10000,36 months,7.51,3,RENT,33000,not verified,credit_card,NJ,9.75,0,0.6,19,7
+119,7000,36 months,12.69,0.5,RENT,30000,VERIFIED - income source,credit_card,VA,15.8,0,47.6,11,7
+120,24000,36 months,15.96,8,MORTGAGE,90000,VERIFIED - income source,home_improvement,CA,9.17,0,71.2,23,16
+121,10625,36 months,7.51,5,MORTGAGE,23000,not verified,medical,OR,18.89,0,43.4,21,6
+122,5000,36 months,14.65,2,RENT,24000,VERIFIED - income source,debt_consolidation,PA,18.3,0,33.3,9,6
+123,8850,36 months,6.62,10,RENT,62000,VERIFIED - income source,credit_card,MD,17.71,0,35.9,19,13
+124,6375,36 months,7.51,4,RENT,44000,VERIFIED - income source,debt_consolidation,GA,4.8,0,58,11,11
+125,6000,36 months,11.71,1,RENT,90000,not verified,credit_card,NJ,2.97,1,56.6,23,4
+126,11100,36 months,6.62,10,RENT,41000,VERIFIED - income,credit_card,PA,29.85,0,62.3,18,20
+127,10000,60 months,12.69,2,MORTGAGE,56000,VERIFIED - income source,debt_consolidation,CA,10.82,0,31.2,18,11
+128,6200,36 months,6.03,5,MORTGAGE,26500,not verified,small_business,WV,18.2,0,16,18,11
+129,15000,36 months,18.64,1,RENT,54000,not verified,debt_consolidation,GA,19.69,0,90.3,12,5
+130,4200,36 months,11.71,2,RENT,53000,not verified,other,MD,16.91,0,79.7,22,9
+131,14000,36 months,14.27,4,RENT,52800,not verified,debt_consolidation,CA,7.36,0,70.8,14,6
+132,8875,36 months,7.51,1,MORTGAGE,38000,not verified,debt_consolidation,GA,23.53,0,62.1,27,18
+133,13500,36 months,9.91,7,RENT,38000,VERIFIED - income,debt_consolidation,CA,12.38,0,67.3,7,14
+134,12000,36 months,9.91,2,RENT,42000,not verified,debt_consolidation,MN,7.83,0,65.4,16,5
+135,16000,60 months,19.91,4,RENT,55000,VERIFIED - income,debt_consolidation,WA,15.8,0,72.4,19,7
+136,21600,60 months,19.42,8,MORTGAGE,60000,VERIFIED - income source,debt_consolidation,GA,16.74,1,78.1,21,21
+137,6000,36 months,10.65,6,MORTGAGE,87000,not verified,home_improvement,NJ,12.86,2,40.5,22,11
+138,20000,60 months,13.49,1,RENT,82000,not verified,credit_card,OH,17.68,0,61.4,23,16
+139,10000,36 months,11.71,8,RENT,60000,not verified,debt_consolidation,CA,22.08,0,29.3,26,10
+140,12000,36 months,16.29,5,MORTGAGE,80000,VERIFIED - income,credit_card,GA,18.18,0,97.2,11,9
+141,13475,60 months,13.49,10,RENT,25000,VERIFIED - income,credit_card,CA,21.89,0,65.8,14,10
+142,7200,36 months,12.42,5,RENT,48000,not verified,major_purchase,IL,17.43,0,80.2,10,5
+143,5600,36 months,14.65,1,MORTGAGE,85000,not verified,debt_consolidation,AZ,12.24,1,90.8,31,12
+144,12000,36 months,14.27,0.5,RENT,57000,VERIFIED - income,debt_consolidation,CA,10.86,0,81.5,11,13
+145,8500,36 months,6.03,2,RENT,25000,not verified,credit_card,MD,1.73,0,28,18,6
+146,8000,36 months,9.91,2,RENT,34000,VERIFIED - income source,credit_card,PA,18.28,0,78.5,7,6
+147,8000,36 months,12.42,10,RENT,40000,not verified,credit_card,OR,15,0,88.2,11,7
+148,15000,36 months,17.27,2,MORTGAGE,44400,VERIFIED - income source,house,FL,3.59,1,91.6,16,28
+149,10000,36 months,9.91,2,OWN,30000,not verified,debt_consolidation,VT,11.24,0,66.8,30,16
+150,10000,36 months,6.62,5,MORTGAGE,70000,not verified,credit_card,NY,16.78,0,69,18,17
+151,8000,36 months,14.65,3,RENT,28000,not verified,car,CA,12.6,0,54.3,11,5
+152,22000,36 months,9.91,2,MORTGAGE,50000,VERIFIED - income,debt_consolidation,MI,13.22,0,49.8,32,13
+153,6000,36 months,14.27,10,MORTGAGE,94800,VERIFIED - income,car,TX,24.53,0,95.9,30,25
+154,2500,36 months,7.51,,OWN,12000,VERIFIED - income source,debt_consolidation,CA,16.3,0,42.2,20,17
+155,13500,36 months,9.91,2,MORTGAGE,36000,VERIFIED - income source,credit_card,DC,22.93,0,67.2,15,31
+156,25000,36 months,12.42,2,RENT,225000,VERIFIED - income,debt_consolidation,NJ,8.32,1,34.6,23,7
+157,10000,36 months,13.49,2,RENT,45900,VERIFIED - income,small_business,CA,24.97,0,48.3,12,7
+158,2500,36 months,13.49,4,RENT,27200,not verified,debt_consolidation,WA,6.44,0,68.1,6,3
+159,7325,36 months,12.69,1,RENT,42000,not verified,debt_consolidation,FL,22.57,0,65,29,15
+160,4000,36 months,12.42,5,RENT,135000,VERIFIED - income,credit_card,NY,12.12,0,85.7,21,7
+161,10000,36 months,13.49,5,RENT,65000,not verified,small_business,CA,6.92,1,69.5,17,12
+162,7750,36 months,17.27,0.5,RENT,24000,not verified,debt_consolidation,IL,16.1,0,67.1,7,7
+163,20000,60 months,20.89,6,RENT,70000,VERIFIED - income source,debt_consolidation,FL,16.63,0,79.9,24,9
+164,9600,36 months,12.42,10,RENT,65000,VERIFIED - income,debt_consolidation,NY,11.65,0,70.9,11,9
+165,21000,60 months,11.71,3,RENT,60000,not verified,debt_consolidation,CA,6.62,0,79.9,11,21
+166,14000,36 months,10.65,3,RENT,30000,VERIFIED - income source,credit_card,CT,15.52,0,65.6,14,5
+167,13350,36 months,12.42,10,RENT,43000,not verified,debt_consolidation,CA,20.57,0,95.3,15,12
+168,15000,36 months,16.77,10,RENT,42000,VERIFIED - income,debt_consolidation,WI,19.63,0,74.9,38,10
+169,15000,36 months,17.27,8,RENT,75000,VERIFIED - income source,debt_consolidation,CA,16.03,0,75.9,17,20
+170,35000,36 months,10.65,2,MORTGAGE,168000,VERIFIED - income,debt_consolidation,TX,3.17,1,1.4,22,9
+171,9000,36 months,10.65,9,MORTGAGE,74000,VERIFIED - income source,credit_card,SD,8.89,0,71.7,10,13
+172,16000,36 months,12.69,1,RENT,58500,VERIFIED - income source,debt_consolidation,IL,20.64,0,89.3,10,17
+173,13500,36 months,12.69,5,RENT,71000,VERIFIED - income source,debt_consolidation,VA,11.97,0,77.7,11,13
+174,24000,36 months,12.69,10,RENT,75000,VERIFIED - income,debt_consolidation,WA,11.6,0,84.6,33,15
+175,12000,36 months,10.65,5,RENT,60000,not verified,credit_card,CA,10.84,0,48.8,18,9
+176,28000,60 months,17.58,5,MORTGAGE,140000,VERIFIED - income,home_improvement,NC,12.07,0,13.4,24,5
+177,14000,36 months,6.62,10,RENT,66000,VERIFIED - income source,debt_consolidation,VA,11.15,0,35.4,46,12
+178,12000,36 months,14.27,8,MORTGAGE,70000,not verified,other,NY,8.4,0,86.2,12,6
+179,25000,36 months,11.71,10,MORTGAGE,100000,VERIFIED - income,debt_consolidation,RI,6.88,0,89.1,18,25
+180,9000,36 months,12.69,5,RENT,50000,VERIFIED - income source,debt_consolidation,NY,17.81,0,55.4,21,10
+181,13250,36 months,10.65,4,RENT,35000,not verified,debt_consolidation,OH,24.93,0,58.7,25,9
+182,20000,36 months,13.49,6,RENT,75000,VERIFIED - income,debt_consolidation,CA,22.38,0,90.8,17,13
+183,3000,36 months,14.65,5,RENT,71000,VERIFIED - income,medical,WI,21.84,0,88.7,14,8
+184,7350,36 months,10.65,10,MORTGAGE,48000,not verified,debt_consolidation,AR,11.93,0,77.5,5,5
+185,11500,36 months,15.27,5,RENT,36000,not verified,debt_consolidation,FL,21.1,0,76.7,14,13
+186,13650,36 months,12.42,10,MORTGAGE,86000,not verified,debt_consolidation,CA,12.29,0,73.4,34,17
+187,10500,36 months,16.29,3,RENT,30000,VERIFIED - income source,debt_consolidation,CA,15,0,55.5,8,4
+188,12000,36 months,9.91,2,RENT,60000,not verified,debt_consolidation,CA,15.5,0,85.7,21,8
+189,6000,36 months,8.9,3,RENT,34000,not verified,credit_card,OH,14.51,0,64.8,16,7
+190,11500,36 months,15.27,10,MORTGAGE,44200,VERIFIED - income,credit_card,CA,21.69,0,90,11,7
+191,7000,36 months,12.42,7,MORTGAGE,82000,not verified,debt_consolidation,MD,12,0,71.6,31,9
+192,2000,36 months,15.27,2,RENT,41000,VERIFIED - income,moving,TX,17.74,0,96.4,11,7
+193,11625,36 months,13.49,0.5,MORTGAGE,36000,VERIFIED - income source,credit_card,KS,19.33,0,84.7,31,18
+194,15075,36 months,14.27,10,RENT,35000,VERIFIED - income,debt_consolidation,TX,20.16,0,89.6,14,11
+195,5300,36 months,15.27,1,RENT,30000,VERIFIED - income,credit_card,CT,24.88,0,82.7,13,6
+196,8200,36 months,6.62,0.5,RENT,40000,VERIFIED - income source,home_improvement,PA,11.1,0,25.5,11,11
+197,12000,36 months,12.42,9,MORTGAGE,105000,not verified,credit_card,TX,13.98,0,75,25,20
+198,8650,36 months,14.27,4,MORTGAGE,45000,VERIFIED - income source,credit_card,FL,7.6,0,58.9,23,6
+199,12000,36 months,12.42,2,RENT,83000,not verified,debt_consolidation,CA,11.81,0,51.1,61,10
+200,9500,36 months,12.69,0.5,MORTGAGE,52500,VERIFIED - income source,moving,CA,23.54,0,75.3,42,12
+201,7400,36 months,13.49,0.5,OWN,25000,VERIFIED - income source,debt_consolidation,AZ,8.45,0,92.8,13,21
+202,14400,36 months,13.49,10,MORTGAGE,60000,not verified,debt_consolidation,FL,16.92,0,65,26,15
+203,24250,60 months,23.91,7,MORTGAGE,120000,VERIFIED - income,debt_consolidation,AZ,12.96,0,99,20,11
+204,7200,36 months,7.9,3,RENT,68000,VERIFIED - income source,debt_consolidation,GA,7.98,0,82.9,14,9
+205,26000,60 months,16.77,10,MORTGAGE,53000,VERIFIED - income,home_improvement,NC,11.77,0,72.7,14,13
+206,7000,60 months,11.71,6,MORTGAGE,69600,VERIFIED - income,credit_card,WA,26.22,0,90.9,23,32
+207,4000,36 months,7.51,0.5,RENT,65000,VERIFIED - income source,major_purchase,CA,18.17,0,50.7,24,9
+208,1500,36 months,17.27,10,MORTGAGE,144000,VERIFIED - income,debt_consolidation,CA,8.23,1,97.8,14,15
+209,19600,36 months,12.42,2,RENT,75000,VERIFIED - income,credit_card,NY,11.62,0,50.1,12,5
+210,2500,36 months,11.71,7,MORTGAGE,29000,VERIFIED - income,debt_consolidation,AZ,18.7,0,66.7,13,6
+211,10000,36 months,12.69,2,RENT,70000,not verified,credit_card,CA,2.69,0,70.2,6,11
+212,10000,36 months,6.62,5,RENT,45000,not verified,credit_card,OH,26.85,0,70.4,40,30
+213,4225,36 months,12.42,5,MORTGAGE,55200,not verified,other,WA,17.61,0,73.7,12,9
+214,3500,36 months,7.9,7,MORTGAGE,61440,not verified,vacation,CA,6.46,1,55.5,19,14
+215,12000,36 months,6.62,10,MORTGAGE,56000,not verified,debt_consolidation,FL,13.65,0,80.3,21,11
+216,16500,36 months,8.9,0.5,RENT,47000,VERIFIED - income source,debt_consolidation,IL,9.06,0,38.8,24,10
+217,22000,60 months,21.67,0.5,RENT,55000,VERIFIED - income,debt_consolidation,WA,15.62,0,79.4,27,10
+218,12000,36 months,14.65,1,RENT,71000,VERIFIED - income,credit_card,KS,14.87,0,71,38,12
+219,10800,36 months,12.42,8,RENT,135000,VERIFIED - income,credit_card,CA,12.12,0,74.5,23,9
+220,14000,36 months,12.42,10,MORTGAGE,63000,not verified,credit_card,GA,7.35,0,97.8,19,18
+221,6000,36 months,13.49,5,MORTGAGE,50000,not verified,debt_consolidation,NM,15.58,0,83.6,14,8
+222,12000,36 months,9.91,5,RENT,80000,not verified,debt_consolidation,TX,14.83,0,67.7,21,11
+223,10000,36 months,12.42,4,RENT,45000,not verified,debt_consolidation,WA,10.45,0,51.6,19,6
+224,8000,36 months,7.9,2,RENT,78000,not verified,vacation,NY,6.09,0,55.9,31,5
+225,14125,36 months,9.91,1,RENT,33000,VERIFIED - income,debt_consolidation,OR,23.13,0,66,20,14
+226,14000,36 months,12.69,5,RENT,62800,not verified,debt_consolidation,WA,19.24,0,64.5,18,17
+227,13200,60 months,17.27,3,RENT,26400,VERIFIED - income source,small_business,TX,9.64,0,50.1,12,5
+228,4000,36 months,19.03,10,MORTGAGE,80000,not verified,vacation,NC,20.59,1,22.6,56,14
+229,4000,36 months,12.69,2,RENT,25000,not verified,debt_consolidation,CO,6.86,0,79.7,13,6
+230,10500,36 months,6.03,10,MORTGAGE,65000,VERIFIED - income source,debt_consolidation,TX,10.36,0,18.7,16,30
+231,5500,36 months,7.9,10,OWN,59000,VERIFIED - income source,car,PA,6.65,0,43.3,23,20
+232,7350,36 months,11.71,1,RENT,33000,VERIFIED - income,debt_consolidation,CA,22.51,0,77.9,23,13
+233,10000,36 months,12.42,10,RENT,39000,VERIFIED - income source,credit_card,MO,18.31,0,90.6,19,13
+234,12000,36 months,7.51,10,RENT,42000,not verified,debt_consolidation,OH,10.74,0,43,17,17
+235,8000,60 months,11.71,3,OWN,31000,VERIFIED - income source,other,OR,16.22,0,34.4,29,5
+236,4500,36 months,8.9,10,MORTGAGE,50700,VERIFIED - income,other,NC,23.43,0,24.4,20,15
+237,18000,36 months,12.42,1,OWN,75000,VERIFIED - income,credit_card,LA,12.51,0,66.1,27,20
+238,12000,36 months,13.49,6,RENT,40000,not verified,debt_consolidation,GA,15.72,0,80.5,13,12
+239,10000,36 months,13.49,10,MORTGAGE,50000,not verified,credit_card,CA,5.88,1,47.6,15,13
+240,6000,36 months,7.9,7,MORTGAGE,80000,not verified,other,WI,8.87,0,30.3,29,18
+241,12000,36 months,12.69,4,RENT,40000,not verified,debt_consolidation,MD,22.2,0,55.5,23,13
+242,12000,36 months,8.9,7,RENT,80000,not verified,other,CA,9.13,0,83.5,16,8
+243,7000,36 months,11.71,2,RENT,75000,VERIFIED - income source,debt_consolidation,CA,15.57,0,94.1,17,10
+244,35000,60 months,18.64,8,MORTGAGE,85000,VERIFIED - income,debt_consolidation,IL,12,0,53,50,16
+245,1400,36 months,7.9,1,RENT,28800,not verified,other,FL,10,0,9.9,7,8
+246,16000,60 months,13.49,10,RENT,35000,VERIFIED - income,small_business,NC,16.22,0,58.5,14,9
+247,3200,36 months,9.91,9,RENT,61200,not verified,debt_consolidation,CA,2.16,0,33.3,17,12
+248,8000,36 months,7.9,1,RENT,40000,not verified,medical,CA,13.35,0,34.4,11,15
+249,11875,60 months,12.69,0.5,RENT,25920,VERIFIED - income source,debt_consolidation,CA,23.75,0,94.1,28,10
+250,5000,36 months,6.03,9,MORTGAGE,54000,not verified,home_improvement,NJ,3.82,0,4,14,13
+251,1800,36 months,6.62,10,RENT,18000,not verified,small_business,MI,23.8,0,39.8,12,10
+252,35000,36 months,8.9,5,RENT,85000,VERIFIED - income,debt_consolidation,IL,17.73,0,61.5,13,10
+253,18000,36 months,8.9,5,RENT,78000,VERIFIED - income,credit_card,NY,7,0,66.3,10,13
+254,14000,36 months,7.9,10,OWN,45600,not verified,debt_consolidation,WV,19.74,0,63.9,10,19
+255,5000,36 months,12.42,2,RENT,70000,not verified,debt_consolidation,TX,20.06,0,54.2,26,7
+256,8000,36 months,15.96,4,RENT,70000,VERIFIED - income source,credit_card,IL,14.04,0,91.9,30,11
+257,10000,36 months,6.03,9,MORTGAGE,80000,not verified,debt_consolidation,MA,12.99,0,45.2,17,24
+258,10000,36 months,7.51,5,RENT,50000,VERIFIED - income,debt_consolidation,NJ,4.63,0,25.7,25,5
+259,12000,36 months,12.42,10,MORTGAGE,35000,VERIFIED - income,debt_consolidation,CO,18.51,0,75.7,13,13
+260,23200,36 months,7.9,3,MORTGAGE,65000,VERIFIED - income,debt_consolidation,MI,27.99,0,47,34,10
+261,4800,36 months,15.27,10,MORTGAGE,75000,not verified,debt_consolidation,WV,9.3,0,73.7,18,8
+262,7300,36 months,11.71,6,RENT,35000,not verified,debt_consolidation,VA,16.42,0,44.6,17,9
+263,10400,36 months,9.91,6,RENT,40000,VERIFIED - income source,debt_consolidation,FL,11.67,0,80.6,19,12
+264,6600,36 months,9.91,1,MORTGAGE,100000,not verified,house,FL,15.53,0,27.8,30,9
+265,12000,36 months,8.9,7,OWN,40000,not verified,debt_consolidation,NJ,9.45,0,37.4,20,9
+266,13250,36 months,17.27,10,RENT,52000,VERIFIED - income,debt_consolidation,NY,23.7,0,91.5,18,13
+267,12000,36 months,11.71,3,RENT,92500,VERIFIED - income source,debt_consolidation,CA,15.97,0,56.2,21,5
+268,25000,36 months,9.91,9,RENT,61000,VERIFIED - income source,debt_consolidation,CA,10.35,0,49.4,10,15
+269,6000,36 months,10.65,10,RENT,36000,not verified,other,HI,14.43,0,48.5,9,14
+270,12000,36 months,7.51,10,MORTGAGE,68000,not verified,credit_card,CA,7.08,0,55.6,34,20
+271,14400,36 months,11.71,1,RENT,80000,not verified,credit_card,CA,16.35,0,48.4,16,16
+272,10000,36 months,12.42,10,RENT,43000,not verified,credit_card,NY,11.58,0,65.5,33,11
+273,8000,36 months,11.71,1,RENT,150000,not verified,credit_card,NY,2.48,1,56.2,8,15
+274,8000,36 months,16.29,5,RENT,50000,not verified,credit_card,NV,13.22,0,72.9,12,6
+275,30000,60 months,12.42,3,RENT,70000,VERIFIED - income source,small_business,TX,0.94,0,3.2,14,5
+276,18000,60 months,16.77,6,OWN,40000,not verified,home_improvement,CA,18.42,0,73.4,20,11
+277,13250,36 months,11.71,2,OWN,35000,not verified,credit_card,PA,22.35,0,67.2,21,7
+278,14000,36 months,14.27,6,RENT,80000,not verified,debt_consolidation,CA,16.21,0,96.2,11,9
+279,20000,60 months,20.3,10,OWN,59000,VERIFIED - income,debt_consolidation,AK,20.91,0,83.1,32,11
+280,10000,36 months,16.29,10,RENT,40000,VERIFIED - income,credit_card,NY,24.39,0,96.4,18,10
+281,4000,36 months,6.03,1,RENT,55000,not verified,debt_consolidation,OR,7.05,0,43.8,18,10
+282,13000,36 months,9.91,6,RENT,110000,not verified,debt_consolidation,CA,8.38,0,81.3,14,10
+283,28000,36 months,12.69,5,RENT,100000,VERIFIED - income source,credit_card,WI,12.35,0,67.5,15,11
+284,10000,36 months,13.49,3,RENT,62000,not verified,debt_consolidation,MA,11.52,0,79.1,20,11
+285,20000,36 months,7.9,0.5,RENT,45000,VERIFIED - income,debt_consolidation,GA,9.25,0,74.9,10,30
+286,18000,36 months,9.91,5,RENT,110000,VERIFIED - income,debt_consolidation,FL,10,0,62.5,22,11
+287,9000,60 months,19.91,3,RENT,60000,VERIFIED - income,credit_card,CA,22.56,0,91.1,30,14
+288,10000,36 months,11.71,3,RENT,33000,not verified,other,NY,8.69,0,88.3,9,11
+289,4200,36 months,6.03,3,RENT,61000,not verified,credit_card,NJ,8.92,0,12.9,16,8
+290,20000,60 months,15.27,10,OWN,78216,VERIFIED - income,debt_consolidation,CA,10.79,0,80.3,21,16
+291,24000,36 months,16.29,2,RENT,50964,VERIFIED - income,debt_consolidation,GA,8.83,1,69.4,13,8
+292,4475,36 months,15.27,3,RENT,43680,not verified,credit_card,CO,18.79,0,33.5,29,11
+293,12000,36 months,12.42,5,RENT,50700,VERIFIED - income source,credit_card,NJ,22.49,0,80.8,18,8
+294,5000,36 months,12.42,2,RENT,30000,VERIFIED - income source,debt_consolidation,SC,23.84,0,89.7,40,10
+295,3000,36 months,6.03,5,RENT,50000,not verified,other,VA,5.5,0,29.4,15,8
+296,12000,36 months,9.91,10,RENT,55000,not verified,debt_consolidation,RI,13,0,75.5,17,13
+297,20000,36 months,15.27,10,MORTGAGE,50000,VERIFIED - income,other,MA,4.34,0,52.7,12,9
+298,10000,36 months,13.49,3,RENT,84000,VERIFIED - income,debt_consolidation,CA,13.87,0,68.7,10,4
+299,15000,36 months,12.42,6,OWN,155000,VERIFIED - income,debt_consolidation,GA,17.85,0,74.9,41,21
+300,12000,36 months,7.9,0.5,MORTGAGE,62000,VERIFIED - income source,debt_consolidation,MD,8.71,0,57.7,15,9
+301,6300,36 months,11.71,2,RENT,30000,not verified,credit_card,NY,7.2,0,84.3,11,20
+302,35000,60 months,17.27,8,MORTGAGE,208000,VERIFIED - income source,debt_consolidation,MD,7.94,0,23.5,79,18
+303,8250,60 months,15.96,2,MORTGAGE,35004,VERIFIED - income,home_improvement,NY,15.6,2,7.7,21,8
+304,10000,36 months,11.71,5,RENT,32000,not verified,credit_card,FL,21.83,0,59.6,23,10
+305,24000,36 months,8.9,10,MORTGAGE,116400,VERIFIED - income,car,FL,3.94,0,8.1,31,19
+306,14400,36 months,12.69,9,MORTGAGE,40000,not verified,debt_consolidation,IL,20.16,0,79.5,13,8
+307,6000,36 months,14.65,7,RENT,34000,not verified,credit_card,MD,21.39,0,88.5,13,9
+308,22000,36 months,15.96,5,MORTGAGE,73000,VERIFIED - income,debt_consolidation,IL,22.47,0,85.1,32,16
+309,12000,36 months,11.71,10,RENT,57200,VERIFIED - income source,debt_consolidation,MA,16.36,0,68.5,17,11
+310,16000,36 months,16.77,0.5,MORTGAGE,114000,VERIFIED - income source,debt_consolidation,MO,17.2,0,64.2,34,13
+311,10000,36 months,10.65,10,MORTGAGE,90000,not verified,debt_consolidation,NY,11.16,0,59.4,22,11
+312,10000,36 months,12.69,2,RENT,35000,VERIFIED - income source,debt_consolidation,KY,12.03,0,84.6,15,11
+313,3500,36 months,13.49,7,RENT,56000,not verified,debt_consolidation,FL,10.35,0,54.2,37,22
+314,9600,36 months,9.91,5,RENT,35000,not verified,debt_consolidation,NC,16.49,0,79,16,15
+315,9875,36 months,7.9,10,MORTGAGE,40000,VERIFIED - income source,debt_consolidation,NY,24.03,0,63.7,16,9
+316,21500,60 months,17.58,2,OWN,59000,VERIFIED - income,debt_consolidation,MO,22.86,0,81.8,16,21
+317,4800,36 months,7.9,6,RENT,48000,VERIFIED - income source,debt_consolidation,FL,13,0,26,13,5
+318,7800,36 months,6.03,10,OWN,85000,not verified,major_purchase,NV,0.78,0,6.2,12,17
+319,20000,36 months,14.27,10,MORTGAGE,70000,VERIFIED - income,credit_card,TX,6.21,0,89,14,10
+320,9750,36 months,7.51,4,RENT,35000,not verified,debt_consolidation,HI,29.04,0,51.7,19,15
+321,18000,60 months,15.96,6,MORTGAGE,91000,VERIFIED - income,credit_card,VA,23.41,0,67,38,27
+322,5000,36 months,6.03,9,MORTGAGE,30000,not verified,other,CA,16.48,0,25.6,16,11
+323,9000,36 months,14.65,4,RENT,45000,VERIFIED - income source,debt_consolidation,NY,17.01,1,50,51,16
+324,7200,36 months,7.9,1,RENT,55000,not verified,debt_consolidation,FL,11.98,0,46.1,14,5
+325,25000,60 months,19.42,10,RENT,60000,VERIFIED - income,credit_card,CA,20.04,0,94.9,24,11
+326,25000,36 months,15.27,8,OWN,82000,VERIFIED - income,debt_consolidation,CA,18.5,0,70.6,23,9
+327,10000,36 months,15.96,10,RENT,53000,VERIFIED - income,debt_consolidation,CA,13.09,0,77.2,19,12
+328,8875,36 months,12.69,5,MORTGAGE,35360,VERIFIED - income,debt_consolidation,PA,23.11,0,71.1,13,6
+329,15550,36 months,11.71,10,RENT,54000,VERIFIED - income,debt_consolidation,FL,23.36,0,89.8,16,13
+330,7500,36 months,12.69,5,RENT,65000,not verified,credit_card,CA,4.41,0,35.5,22,4
+331,8875,36 months,8.9,6,OWN,28800,not verified,debt_consolidation,CA,24.29,0,69.5,23,13
+332,4500,36 months,17.27,1,RENT,42000,not verified,credit_card,OH,4.34,0,68.5,3,3
+333,5800,36 months,12.42,3,RENT,36000,not verified,debt_consolidation,TX,21.67,0,66.9,20,11
+334,10000,36 months,11.71,2,RENT,40000,not verified,debt_consolidation,NJ,22.26,0,47.4,17,13
+335,10000,36 months,9.91,4,RENT,50000,not verified,credit_card,GA,19.06,0,88.6,28,17
+336,14000,36 months,11.71,1,RENT,52000,not verified,credit_card,CA,12.97,0,57.9,8,6
+337,12000,36 months,8.9,3,RENT,32000,VERIFIED - income source,debt_consolidation,OR,6.75,0,59.2,12,6
+338,24000,36 months,7.9,6,OWN,75000,VERIFIED - income,debt_consolidation,FL,10.58,0,45,22,25
+339,14000,36 months,14.27,0.5,RENT,80000,not verified,credit_card,NY,3.3,0,59,14,6
+340,12000,36 months,8.9,7,MORTGAGE,40246,VERIFIED - income,credit_card,AZ,17.08,0,72.2,24,12
+341,15000,60 months,12.69,3,OWN,30000,VERIFIED - income,debt_consolidation,NJ,24.76,0,65.7,17,7
+342,8050,36 months,12.69,1,RENT,36000,VERIFIED - income source,debt_consolidation,WA,14.8,0,81.3,7,4
+343,5600,36 months,10.65,6,RENT,60000,not verified,debt_consolidation,CA,16.36,1,12.4,25,12
+344,7500,36 months,9.91,3,RENT,31200,not verified,credit_card,CA,12.35,0,57.3,18,6
+345,7000,36 months,11.71,10,RENT,90000,VERIFIED - income,credit_card,MD,12.19,0,93.8,25,13
+346,5400,36 months,7.9,4,RENT,40000,not verified,debt_consolidation,MO,10.89,0,77,15,18
+347,16000,36 months,12.42,1,RENT,90000,VERIFIED - income,credit_card,PA,13.67,0,65.2,19,9
+348,35000,60 months,12.42,9,MORTGAGE,105000,VERIFIED - income,home_improvement,TX,16.53,0,25,38,21
+349,6000,60 months,7.9,0.5,RENT,30084,VERIFIED - income,debt_consolidation,KY,1.68,0,10,15,17
+350,9800,36 months,16.29,4,RENT,67000,not verified,credit_card,CA,21.01,0,44.9,18,19
+351,5000,36 months,6.62,1,RENT,276000,VERIFIED - income source,debt_consolidation,FL,1.82,0,56,18,7
+352,9900,36 months,11.71,6,RENT,26400,VERIFIED - income,debt_consolidation,OH,14.09,0,88.9,11,17
+353,4000,36 months,11.71,,RENT,24000,VERIFIED - income source,home_improvement,FL,7.5,1,54.9,6,6
+354,15000,36 months,11.71,3,MORTGAGE,68400,VERIFIED - income source,debt_consolidation,FL,5.7,0,82.2,9,11
+355,6250,36 months,15.96,1,RENT,29120,not verified,debt_consolidation,WI,20.85,0,88.8,12,12
+356,6400,36 months,16.29,0.5,RENT,29120,not verified,debt_consolidation,WI,17.97,0,94.6,14,10
+357,12000,36 months,15.27,4,MORTGAGE,54000,not verified,debt_consolidation,NJ,17.07,0,61,34,20
+358,15000,36 months,8.9,5,MORTGAGE,30000,VERIFIED - income,debt_consolidation,AR,6.48,0,25.2,10,11
+359,6500,36 months,14.27,4,MORTGAGE,30000,not verified,credit_card,WA,10.12,0,81.5,9,8
+360,8000,36 months,15.96,10,RENT,50000,not verified,credit_card,CT,16.34,1,81.2,18,12
+361,15000,36 months,14.65,10,MORTGAGE,100500,VERIFIED - income source,credit_card,NJ,14.56,0,74.3,14,9
+362,10200,36 months,14.27,3,RENT,40000,not verified,debt_consolidation,CA,16.53,0,80.6,10,4
+363,9000,36 months,12.42,5,MORTGAGE,47000,not verified,credit_card,FL,19.1,0,47.2,17,17
+364,6500,36 months,16.29,3,MORTGAGE,68000,not verified,debt_consolidation,FL,21.85,0,92.4,17,15
+365,23000,60 months,21.28,8,MORTGAGE,95000,VERIFIED - income,debt_consolidation,MI,8.94,0,99.3,35,10
+366,2000,36 months,7.9,4,RENT,39600,not verified,credit_card,CA,5.09,0,79.2,13,13
+367,8000,36 months,13.49,3,OWN,30000,VERIFIED - income,debt_consolidation,CA,14.48,0,44.1,21,9
+368,8875,36 months,7.51,1,RENT,30000,VERIFIED - income,debt_consolidation,KY,28.4,0,83.7,27,28
+369,1500,36 months,18.64,0.5,RENT,17000,VERIFIED - income source,other,OH,4.59,0,99.8,15,4
+370,8000,36 months,12.42,3,RENT,42000,not verified,debt_consolidation,PA,20.26,0,85.4,11,9
+371,20000,60 months,14.65,10,RENT,75000,VERIFIED - income,debt_consolidation,CA,16.51,0,74.9,16,16
+372,6500,36 months,11.71,4,RENT,42000,not verified,credit_card,MA,6.26,0,63.8,11,4
+373,9600,36 months,13.49,3,MORTGAGE,27000,VERIFIED - income source,debt_consolidation,NY,10.22,0,84.9,27,10
+374,10000,36 months,7.9,5,MORTGAGE,46000,not verified,home_improvement,WA,10.46,0,50.1,17,10
+375,15000,36 months,12.42,10,MORTGAGE,80000,VERIFIED - income,debt_consolidation,NC,5.61,0,53.7,17,11
+376,9000,36 months,6.62,3,MORTGAGE,45000,not verified,debt_consolidation,CA,22.05,0,44,17,14
+377,10000,36 months,7.9,2,RENT,72500,VERIFIED - income,credit_card,NY,27.92,0,69.1,23,11
+378,1000,36 months,14.65,,RENT,18408,not verified,major_purchase,NJ,6,0,83.7,8,18
+379,14000,36 months,7.9,2,RENT,30000,VERIFIED - income source,debt_consolidation,TX,15.2,0,62.3,28,11
+380,8500,36 months,14.27,9,RENT,50000,VERIFIED - income source,debt_consolidation,PA,8.5,0,61.5,27,7
+381,4500,36 months,15.96,5,MORTGAGE,65000,not verified,other,NY,14.66,0,76.6,34,9
+382,3000,36 months,7.51,10,MORTGAGE,65000,not verified,major_purchase,TX,27.91,0,56,19,13
+383,10000,36 months,9.91,4,MORTGAGE,120000,VERIFIED - income source,home_improvement,NJ,7.98,0,68.1,35,14
+384,33425,60 months,13.49,2,MORTGAGE,75000,VERIFIED - income source,debt_consolidation,NY,25.71,0,50.5,43,33
+385,7200,36 months,15.27,4,RENT,54990,VERIFIED - income,debt_consolidation,TX,20.95,0,96,24,10
+386,18000,60 months,11.71,0.5,RENT,40000,VERIFIED - income source,debt_consolidation,AZ,18.18,0,68.8,12,12
+387,23000,36 months,7.9,2,MORTGAGE,137000,VERIFIED - income source,debt_consolidation,TX,8.13,0,60.8,37,20
+388,20000,60 months,16.77,10,RENT,60000,VERIFIED - income,debt_consolidation,CA,9.46,0,41,30,16
+389,7000,36 months,8.9,1,RENT,46000,VERIFIED - income,credit_card,VA,7.9,0,76.5,18,9
+390,21000,36 months,12.69,8,MORTGAGE,135000,VERIFIED - income,debt_consolidation,OH,8.52,0,63,24,11
+391,8250,36 months,7.51,,MORTGAGE,31500,VERIFIED - income,debt_consolidation,MD,17.87,0,10.4,37,30
+392,13000,36 months,9.91,10,RENT,65000,VERIFIED - income,credit_card,CA,8.82,0,75.9,18,10
+393,18000,36 months,6.62,2,MORTGAGE,78000,not verified,debt_consolidation,TX,6.35,0,25,13,19
+394,7200,36 months,6.03,5,MORTGAGE,60000,not verified,other,AZ,2.54,0,6,20,15
+395,16500,36 months,8.9,10,RENT,48000,not verified,credit_card,UT,13.1,0,87.1,25,11
+396,8125,36 months,7.9,0.5,RENT,25000,not verified,debt_consolidation,IL,24.34,0,63.6,21,12
+397,18800,36 months,7.51,3,MORTGAGE,82000,VERIFIED - income,debt_consolidation,CA,13.76,1,17.3,24,23
+398,26800,36 months,19.03,10,MORTGAGE,82000,VERIFIED - income source,credit_card,CA,21.59,0,98,31,30
+399,19200,36 months,7.9,5,MORTGAGE,42000,VERIFIED - income,debt_consolidation,OK,19.66,0,72.2,24,11
+400,12875,60 months,17.58,3,RENT,27600,VERIFIED - income,debt_consolidation,CA,18.7,0,86.1,7,10
+401,4000,36 months,12.42,5,MORTGAGE,38000,not verified,credit_card,OH,19.64,0,52.7,16,9
+402,4000,36 months,16.29,4,RENT,35000,not verified,debt_consolidation,CA,9.22,0,83.5,13,8
+403,12000,36 months,9.91,10,OWN,33000,not verified,credit_card,CA,18.8,0,74.9,10,21
+404,2625,36 months,11.71,10,MORTGAGE,52800,not verified,medical,NV,14.52,0,65.2,21,8
+405,7000,36 months,9.91,10,RENT,73882,not verified,debt_consolidation,PA,11.45,0,38.1,10,18
+406,11300,36 months,12.69,7,MORTGAGE,36000,not verified,credit_card,FL,16.33,0,74.7,22,13
+407,4000,36 months,9.91,10,MORTGAGE,130000,VERIFIED - income source,debt_consolidation,CA,10.05,0,85,22,14
+408,8000,36 months,6.03,10,MORTGAGE,57200,not verified,debt_consolidation,SC,4.72,0,6.8,47,18
+409,14400,36 months,18.25,5,RENT,51871,VERIFIED - income,debt_consolidation,RI,7.82,0,79.3,9,5
+410,4375,36 months,12.42,2,OWN,15000,VERIFIED - income,debt_consolidation,CA,13.92,0,74.9,5,5
+411,4100,36 months,7.51,9,MORTGAGE,70197,not verified,credit_card,LA,6.58,0,72.1,12,10
+412,6000,36 months,8.9,7,RENT,47000,VERIFIED - income,other,OH,14.43,0,31.4,14,16
+413,4000,36 months,6.62,6,MORTGAGE,120000,VERIFIED - income source,home_improvement,NC,3.89,0,24.4,31,14
+414,3000,36 months,10.65,10,MORTGAGE,86004,not verified,other,NJ,13.37,0,64.6,35,14
+415,5400,36 months,12.69,10,MORTGAGE,75000,not verified,car,TX,8.8,0,68.7,33,19
+416,15000,36 months,16.29,1,RENT,110000,VERIFIED - income,small_business,TX,21.99,2,84.1,24,13
+417,20000,60 months,18.64,3,MORTGAGE,80000,VERIFIED - income source,debt_consolidation,AZ,23.47,0,88.5,13,10
+418,10400,36 months,12.69,4,RENT,44000,VERIFIED - income source,credit_card,CA,19.91,0,90.1,21,9
+419,4500,60 months,17.58,7,MORTGAGE,51600,VERIFIED - income source,debt_consolidation,WA,22.63,0,67.7,13,7
+420,11500,36 months,12.42,0.5,RENT,38500,VERIFIED - income source,credit_card,DC,13.06,0,89.6,15,7
+421,10000,36 months,6.62,4,RENT,75000,VERIFIED - income,home_improvement,FL,24.85,0,5.9,40,12
+422,18225,60 months,13.49,10,MORTGAGE,37320,VERIFIED - income,debt_consolidation,GA,20.8,0,74.4,12,10
+423,3600,36 months,8.9,10,RENT,55000,not verified,debt_consolidation,NY,5.48,0,65.9,18,9
+424,18500,60 months,11.71,2,RENT,100000,VERIFIED - income,major_purchase,CA,0.72,0,10.4,10,8
+425,16800,60 months,18.25,10,MORTGAGE,70000,VERIFIED - income,credit_card,CO,21.5,0,38.4,18,12
+426,10000,36 months,17.27,8,RENT,68000,not verified,debt_consolidation,MT,17.15,0,92.5,16,9
+427,15000,36 months,18.25,10,MORTGAGE,66000,not verified,debt_consolidation,CA,8.49,2,89.1,28,23
+428,8000,36 months,11.71,8,RENT,85000,VERIFIED - income source,major_purchase,NJ,10.22,0,35.7,29,9
+429,25000,60 months,16.77,1,RENT,83004,VERIFIED - income,debt_consolidation,CA,13.66,0,82.9,19,14
+430,16000,36 months,7.9,1,RENT,51000,VERIFIED - income source,debt_consolidation,AZ,24.66,0,81,28,19
+431,8000,36 months,10.65,2,RENT,55000,VERIFIED - income source,debt_consolidation,CA,11.56,0,15.7,10,12
+432,7200,36 months,7.51,10,MORTGAGE,47000,VERIFIED - income source,debt_consolidation,VA,19.74,0,83.5,32,13
+433,12000,36 months,7.51,4,RENT,86000,VERIFIED - income source,debt_consolidation,CA,13.3,0,51.8,25,9
+434,2200,36 months,15.27,10,OWN,48000,not verified,debt_consolidation,TX,5.47,0,83.7,7,11
+435,28000,60 months,12.42,4,MORTGAGE,85000,VERIFIED - income source,debt_consolidation,PA,15.87,0,58.7,31,16
+436,6000,36 months,7.51,2,MORTGAGE,50000,VERIFIED - income,debt_consolidation,AR,23.86,0,62.4,23,11
+437,8000,60 months,8.9,1,RENT,51204,not verified,debt_consolidation,NY,25.12,0,37.6,40,24
+438,14400,36 months,15.27,2,RENT,42996,not verified,debt_consolidation,NY,0.98,0,7.7,3,3
+439,20000,60 months,19.03,5,RENT,60000,VERIFIED - income,credit_card,CA,18.06,0,97.4,28,17
+440,14050,36 months,8.9,3,MORTGAGE,120000,VERIFIED - income,major_purchase,NY,2.21,0,18.8,13,5
+441,6000,36 months,13.49,10,OWN,62691,not verified,major_purchase,AL,3.16,0,94.4,19,17
+442,35000,60 months,20.3,3,OWN,85000,VERIFIED - income,debt_consolidation,FL,16.39,0,76.5,40,27
+443,10525,36 months,7.9,4,RENT,49668,VERIFIED - income source,debt_consolidation,CA,7.27,0,68.9,9,9
+444,7200,36 months,15.96,2,RENT,30000,VERIFIED - income source,debt_consolidation,NJ,5.2,0,94.2,7,12
+445,18500,60 months,10.65,10,OWN,40000,VERIFIED - income,debt_consolidation,HI,26.34,0,0.1,27,15
+446,12000,36 months,13.49,10,MORTGAGE,40000,VERIFIED - income,debt_consolidation,AR,16.2,0,74.4,27,15
+447,12000,36 months,11.71,5,MORTGAGE,100000,not verified,credit_card,IL,6.58,0,79.6,11,7
+448,3000,36 months,11.71,2,RENT,56312,not verified,other,VA,16.03,0,83.4,13,9
+449,9500,36 months,16.29,10,RENT,54011,VERIFIED - income source,debt_consolidation,CA,18.51,0,79.5,40,12
+450,19775,36 months,12.42,2,RENT,49110.32,VERIFIED - income,debt_consolidation,CA,17.57,0,61.1,15,13
+451,12000,60 months,14.65,0.5,RENT,75000,VERIFIED - income,credit_card,HI,16.13,0,89.4,28,11
+452,28000,60 months,14.27,7,MORTGAGE,95000,VERIFIED - income,debt_consolidation,WA,9.46,0,68.1,29,11
+453,30000,36 months,12.42,2,RENT,80000,VERIFIED - income,debt_consolidation,WI,22.23,0,94,33,11
+454,16000,36 months,10.65,9,MORTGAGE,55000,VERIFIED - income,debt_consolidation,CA,13.33,0,89.7,19,9
+455,14500,36 months,14.65,8,RENT,90000,VERIFIED - income,credit_card,MD,5.24,0,46.7,28,10
+456,11700,60 months,14.65,3,RENT,68500,VERIFIED - income,credit_card,VA,18.17,0,39.8,21,6
+457,4150,36 months,10.65,4,RENT,100000,not verified,debt_consolidation,CA,1.99,0,25,8,13
+458,24000,36 months,16.77,6,RENT,70000,VERIFIED - income,credit_card,CA,12.57,0,91.2,13,7
+459,21250,36 months,12.42,5,RENT,37000,VERIFIED - income,other,NJ,14.27,0,69.3,21,11
+460,10000,36 months,14.27,10,OWN,75000,VERIFIED - income source,debt_consolidation,AR,13.46,0,71.3,18,16
+461,25000,60 months,18.25,0.5,MORTGAGE,75000,VERIFIED - income,debt_consolidation,CA,10.58,0,72,29,14
+462,4000,36 months,15.96,6,RENT,39000,VERIFIED - income source,debt_consolidation,NV,21.91,0,93.5,15,5
+463,15000,36 months,11.71,0.5,RENT,60000,not verified,debt_consolidation,NY,8.86,0,70.8,15,9
+464,15000,60 months,17.58,3,MORTGAGE,110000,VERIFIED - income,home_improvement,UT,12.36,0,81.2,10,6
+465,3600,36 months,15.96,3,RENT,40000,VERIFIED - income source,moving,NY,12.78,0,52.2,6,3
+466,6000,60 months,19.03,5,OWN,31000,VERIFIED - income,debt_consolidation,CA,20.13,0,93,14,8
+467,15000,36 months,15.27,10,RENT,60000,VERIFIED - income,debt_consolidation,NY,10.72,0,75.2,18,9
+468,12000,60 months,18.25,3,RENT,43000,VERIFIED - income,credit_card,CA,15.24,0,45.4,14,5
+469,12375,36 months,7.51,6,RENT,42000,not verified,debt_consolidation,MD,28.06,0,52.1,34,10
+470,4000,36 months,12.69,6,RENT,30000,not verified,home_improvement,FL,17.6,0,5.5,20,15
+471,13000,36 months,10.65,10,MORTGAGE,50000,not verified,debt_consolidation,FL,20.11,0,40.6,15,13
+472,5000,36 months,6.62,1,MORTGAGE,39396,VERIFIED - income source,home_improvement,GA,8.16,0,18.5,30,11
+473,5000,36 months,15.96,7,OWN,98000,VERIFIED - income source,credit_card,CA,19.63,0,53.3,14,9
+474,26000,36 months,11.71,10,RENT,62500,VERIFIED - income,credit_card,OK,16.55,0,94.8,16,11
+475,4000,60 months,19.91,10,RENT,45000,VERIFIED - income source,house,PA,15.2,0,22.4,11,15
+476,8000,36 months,7.9,10,RENT,32400,not verified,debt_consolidation,CA,7.56,0,34.1,15,10
+477,1700,36 months,7.9,,MORTGAGE,37800,not verified,home_improvement,CO,27,0,91.2,27,32
+478,16000,36 months,9.91,10,RENT,50000,not verified,debt_consolidation,PA,15.1,0,66.2,26,18
+479,20000,60 months,9.91,10,MORTGAGE,114996,VERIFIED - income,debt_consolidation,NY,11.19,0,15.4,20,11
+480,12000,36 months,14.65,6,RENT,54400,VERIFIED - income,debt_consolidation,WA,13.81,0,60.2,33,13
+481,7000,36 months,11.71,7,MORTGAGE,72800,VERIFIED - income,credit_card,MD,24.64,0,84.1,33,11
+482,8000,60 months,20.3,1,RENT,42500,VERIFIED - income source,debt_consolidation,GA,14.23,0,95,24,7
+483,13000,36 months,16.29,10,RENT,28000,VERIFIED - income source,debt_consolidation,NC,12.9,0,93.3,8,10
+484,20000,60 months,21.28,2,OWN,120000,VERIFIED - income,debt_consolidation,MN,16.72,0,75.5,43,13
+485,18000,36 months,13.49,8,MORTGAGE,96000,VERIFIED - income,debt_consolidation,CT,16.4,0,46.6,37,24
+486,10000,36 months,16.29,3,RENT,83200,VERIFIED - income source,credit_card,WA,17.03,0,92,15,6
+487,22250,60 months,15.27,8,RENT,45000,VERIFIED - income,debt_consolidation,MO,23.07,0,77.7,23,12
+488,24000,60 months,17.58,5,RENT,68809,VERIFIED - income,debt_consolidation,FL,21.29,0,25.3,20,6
+489,11200,36 months,12.42,3,RENT,75000,not verified,car,CA,22.88,0,74.4,13,15
+490,7000,36 months,10.65,3,RENT,52000,not verified,other,NY,18.16,0,94.8,13,8
+491,8000,36 months,6.03,6,RENT,57600,VERIFIED - income source,house,CA,11.52,0,12.4,12,40
+492,22500,60 months,16.77,4,RENT,48500,VERIFIED - income,credit_card,CA,10.91,0,84.5,12,19
+493,12000,36 months,17.27,2,RENT,95000,not verified,debt_consolidation,GA,11.1,0,88.5,19,5
+494,22000,36 months,14.65,0.5,RENT,58000,VERIFIED - income,debt_consolidation,IL,12.1,0,92.3,28,8
+495,6200,36 months,10.65,10,MORTGAGE,24000,not verified,credit_card,AK,19.95,0,55.2,11,10
+496,15900,36 months,9.91,9,MORTGAGE,58000,not verified,debt_consolidation,VA,21.72,0,64.5,15,11
+497,5000,36 months,8.9,,MORTGAGE,70000,VERIFIED - income source,other,CA,16.17,1,53,32,28
+498,16000,36 months,6.62,3,MORTGAGE,104000,not verified,other,MA,2.78,0,3.2,24,15
+499,5000,36 months,11.71,4,RENT,35000,not verified,car,CA,4.01,0,61.8,3,5
+500,3150,36 months,15.27,5,RENT,53000,VERIFIED - income source,vacation,PA,4.37,0,28.2,10,5
+501,12000,36 months,14.27,2,RENT,28000,VERIFIED - income source,credit_card,CA,8.49,0,68.5,10,4
+502,28000,36 months,7.9,4,MORTGAGE,118000,VERIFIED - income,home_improvement,IL,5.29,0,24.8,23,16
+503,5000,36 months,12.42,0.5,RENT,40000,not verified,wedding,FL,22.59,0,82.3,26,14
+504,3000,36 months,9.91,,MORTGAGE,42000,not verified,renewable_energy,MN,4.29,0,33.3,3,6
+505,3000,36 months,7.9,10,MORTGAGE,65000,not verified,other,WA,4.89,0,85.3,18,17
+506,8400,36 months,6.62,2,RENT,25000,VERIFIED - income source,debt_consolidation,CA,11.86,0,36.1,19,6
+507,7000,36 months,10.65,10,MORTGAGE,36000,VERIFIED - income,debt_consolidation,CA,24,0,72.8,23,14
+508,2000,36 months,9.91,1,MORTGAGE,231252,VERIFIED - income source,other,GA,11.43,0,93.5,43,31
+509,8575,36 months,17.58,,MORTGAGE,32000,VERIFIED - income,debt_consolidation,FL,22.54,0,89.9,5,7
+510,28000,60 months,12.42,8,MORTGAGE,84996,VERIFIED - income,debt_consolidation,GA,23.41,0,44.2,40,13
+511,10000,36 months,7.9,6,RENT,66000,not verified,debt_consolidation,OR,12.42,0,89.4,24,15
+512,25000,36 months,19.42,2,MORTGAGE,92000,VERIFIED - income,credit_card,LA,21.68,0,84.5,38,13
+513,8000,36 months,11.71,10,RENT,70000,not verified,credit_card,CA,20.21,0,92.1,22,6
+514,16000,60 months,18.25,10,MORTGAGE,49000,VERIFIED - income,credit_card,OH,18.39,0,94.5,23,10
+515,25000,36 months,11.71,8,MORTGAGE,76896,VERIFIED - income,debt_consolidation,FL,13.9,0,76,33,11
+516,2000,36 months,9.91,10,RENT,24000,not verified,other,IL,13.5,0,64.2,10,12
+517,16800,36 months,14.65,2,RENT,60000,VERIFIED - income,credit_card,TX,14.52,0,96.9,14,8
+518,8000,36 months,8.9,3,MORTGAGE,120000,not verified,credit_card,CA,10.52,0,60.6,15,11
+519,12000,60 months,12.69,9,MORTGAGE,57000,not verified,debt_consolidation,CT,19.71,0,66.3,13,6
+520,11000,36 months,7.9,4,MORTGAGE,80000,not verified,credit_card,AZ,4.74,0,77.7,15,12
+521,5000,36 months,16.29,6,MORTGAGE,85000,VERIFIED - income source,medical,WA,22.81,0,90,17,7
+522,18000,36 months,16.29,10,OWN,140000,VERIFIED - income,debt_consolidation,TX,21.8,0,90.2,35,11
+523,10000,36 months,12.69,6,OWN,36000,VERIFIED - income,debt_consolidation,CA,15.9,0,65.3,10,5
+524,5000,36 months,9.91,0.5,RENT,70000,VERIFIED - income source,credit_card,OH,13.92,0,64.3,23,21
+525,10000,36 months,16.29,4,RENT,51360,VERIFIED - income source,credit_card,NY,16.61,0,79.1,9,4

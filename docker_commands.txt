@@ -1,0 +1,4 @@
+1. docker build -t bank . 
+2. docker run -p 8080:8080 -ti bank /bin/bash -c "cd /root/app/ && source activate ml && python app.py"
+
+use sudo if not windows ....

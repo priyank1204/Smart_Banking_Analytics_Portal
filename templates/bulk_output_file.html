@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<style>
+  #inputFields{
+  float:right;
+  font-size:20px;
+  }
+
+  .sub-div{
+                text-align: center;
+                  padding: 10px;
+                }
+                .lower_buttons{
+                text-align: centre;
+                font-size: 23px;
+                }
+					table, th, td {
+					  border: 3px solid black;
+					  border-collapse: collapse;
+                       margin-left: 100px;;
+					}
+					th, td {
+					  padding: 15px;
+					  text-align: left;
+					  border: 1px solid #000;
+  					border-spacing: 0;
+					}
+					#t01 {
+						  width: 100%;
+						  background-color: red;
+						}
+/* Image Modal for visualization */
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 100%){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+
+  <body style=" background-image: url('static/bulk_up_backg.jpeg'); background-repeat:no-repeat; background-size: 1600px 960px;">
+    </br>
+  <tr>
+      <td>
+     <form action="home1" method="post" name="home" id="home">
+        <input style="margin-left:20px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="submit" name="Submit" value="Home">
+      </td>
+      <td>
+     <input style="margin-left:10px; padding: 8px 16px; font-size: 18px; font-weight: bold;" type="button" value="Back" onclick="history.back()">
+    </form>
+      </td>
+      </tr>
+
+<h1 style="text-align: center; color:black ;font-size:40px; margin-top:0%; ">Visuals and Output File</h1>
+ <form style = "margin:auto; width: 95%; border: 3px solid grey; padding: 12px; " action="predict_LR" method="POST" enctype = "multipart/form-data">
+
+  <div class="mb-4 row">
+      <div class="col-sm-4">
+          <br>
+                {% for table in tables %}
+                            {{ table|safe }}
+                            {% endfor %}
+      </div>
+  </form>
+            {% if message == 'FD'%}
+             <div class="col-sm-4"> <br>
+                    <div class="col-sm-2">
+                        <img id="myImg01" src="static/{{chart1_name}}" alt="Count PLot" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+                          <br> <br>
+                    <div class="col-sm-2">
+                            <img id="myImg02" src="static/{{chart2_name}}" alt="Heat Map" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+             </div>
+                <div class="col-sm-4"> <br>
+                        <div class="col-sm-2">
+                            <img id="myImg03" src="static/{{chart3_name}}" alt="Feature Importance Graph" style="height:220px; width:450%;max-width:1000px">
+                        </div>
+                          <br> <br>
+                    <div class="col-sm-2">
+                            <img id="myImg04" src="static/{{chart4_name}}" alt="Most Imp Feature Visuals" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+                </div>
+    {% elif message == 'LA'%}
+     <div class="col-sm-4"> <br>
+                    <div class="col-sm-2">
+                        <img id="myImg01" src="static/{{chart1_name}}" alt="Count_Plot" style="height:220px; width:450%;max-width:1000px">
+
+                    </div>
+                          <br> <br>
+                    <div class="col-sm-2">
+                            <img id="myImg02" src="static/{{chart2_name}}" alt="Plot to be added" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+             </div>
+                <div class="col-sm-4"> <br>
+                        <div class="col-sm-2">
+                            <img id="myImg03" src="static/{{chart3_name}}" alt="Feature Importance Graph" style="height:220px; width:450%;max-width:1000px">
+                        </div>
+                          <br> <br>
+                    <div class="col-sm-2">
+                            <img id="myImg04" src="static/{{chart4_name}}" alt="Most Important Feature Visuals" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+                </div>
+    {% elif message == 'LR'%}
+     <div class="col-sm-4"> <br>
+                    <div class="col-sm-2">
+                        <img id="myImg01" src="static/{{chart1_name}}" alt="Count PLot" style="height:220px; width:450%;max-width:1000px">
+
+                    </div>
+                          <br> <br>
+                    <div class="col-sm-2">
+                            <img id="myImg02" src="static/{{chart2_name}}" alt="Heat Map" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+             </div>
+                <div class="col-sm-4"> <br>
+                        <div class="col-sm-2">
+                            <img id="myImg03" src="static/{{chart3_name}}" alt="Feature Importance Graph" style="height:220px; width:450%;max-width:1000px">
+                        </div>
+                          <br> <br>
+                    <div class="col-sm-2">
+                            <img id="myImg04" src="static/{{chart4_name}}" alt="Most Imp Feature Visuals" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+                </div>
+    {% elif message == 'LE'%}
+     <div class="col-sm-4"> <br>
+                    <div class="col-sm-2">
+                        <img id="myImg01" src="static/{{chart1_name}}" alt="Count PLot" style="height:220px; width:450%;max-width:1000px">
+
+                    </div>
+                          <br> <br>
+                    <div class="col-sm-2">
+                            <img id="myImg02" src="static/{{chart2_name}}" alt="Heat Map" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+             </div>
+                <div class="col-sm-4"> <br>
+                        <div class="col-sm-2">
+                            <img id="myImg03" src="static/{{chart3_name}}" alt="Feature Importance Graph" style="height:220px; width:450%;max-width:1000px">
+                        </div>
+                          <br> <br>
+                    <div class="col-sm-2">
+                            <img id="myImg04" src="static/{{chart4_name}}" alt="Most Imp Feature Visuals" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+                </div>
+    {% elif message == 'MA'%}
+     <div class="col-sm-4"> <br>
+                    <div class="col-sm-2">
+                        <img id="myImg01" src="static/{{chart1_name}}" alt="Count PLot" style="height:220px; width:450%;max-width:1000px">
+
+                    </div>
+                          <br> <br>
+                    <div class="col-sm-2">
+                            <img id="myImg02" src="static/{{chart2_name}}" alt="Heat Map" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+             </div>
+                <div class="col-sm-4"> <br>
+                        <div class="col-sm-2">
+                            <img id="myImg03" src="static/{{chart3_name}}" alt="Feature Importance Graph" style="height:220px; width:450%;max-width:1000px">
+                        </div>
+                          <br> <br>
+                    <div class="col-sm-2">
+                            <img id="myImg04" src="static/{{chart4_name}}" alt="Most Imp Feature Visuals" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+                </div>
+
+    {% elif message == 'MS'%}
+     <div class="col-sm-4"> <br>
+                    <div class="col-sm-2">
+                        <img id="myImg01" src="static/{{chart1_name}}" alt="Count PLot" style="height:220px; width:450%;max-width:1000px">
+
+                    </div>
+                          <br> <br>
+                    <div class="col-sm-2">
+                            <img id="myImg02" src="static/{{chart2_name}}" alt="Heat Map" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+             </div>
+                <div class="col-sm-4"> <br>
+                        <div class="col-sm-2">
+                            <img id="myImg03" src="static/{{chart3_name}}" alt="Feature Importance Graph" style="height:220px; width:450%;max-width:1000px">
+                        </div>
+                          <br> <br>
+                    <div class="col-sm-2">
+                            <img id="myImg04" src="static/{{chart4_name}}" alt="Most Imp Feature Visuals" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+                </div>
+
+    {% elif message == 'LPR'%}
+     <div class="col-sm-4"> <br>
+                    <div class="col-sm-2">
+                        <img id="myImg01" src="static/{{chart1_name}}" alt="Count PLot" style="height:220px; width:450%;max-width:1000px">
+
+                    </div>
+                          <br> <br>
+                    <div class="col-sm-2">
+                            <img id="myImg02" src="static/{{chart2_name}}" alt="Heat Map" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+             </div>
+                <div class="col-sm-4"> <br>
+                        <div class="col-sm-2">
+                            <img id="myImg03" src="static/{{chart3_name}}" alt="Feature Importance Graph" style="height:220px; width:450%;max-width:1000px">
+                        </div>
+                          <br> <br>
+                    <div class="col-sm-2">
+                            <img id="myImg04" src="static/{{chart4_name}}" alt="Most Imp Feature Visuals" style="height:220px; width:450%;max-width:1000px">
+                    </div>
+                </div>
+      {% endif %}
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img001">
+    <div id="caption"></div>
+</div>
+<!--------------------------------------------------------------------------------------------------------!>
+    <div class="col-sm-4">
+        <br> <label style="margin-left:110px; color:blue; padding: 6px 14px; font-size: 26px; font-weight: bold;">Output File</label>
+    </div>
+
+    <div class="col-sm-2"> <br>
+            <label style="color:black; font-size: 26px; font-weight: bold;">Full Data Visuals</label>
+                 </div>
+
+              <div class="col-sm-2"> <br>
+                <form  action="show_graph" method="POST" enctype = "multipart/form-data">
+            <input style="background-color: #4CAF50; margin-left:1px; padding: 6px 14px; font-size: 16px; font-weight: bold;" id="sub" type="submit" value="&nbsp;&nbsp;&nbsp;Graph&nbsp;&nbsp;&nbsp;&nbsp;">
+                </form>
+                 </div>
+         <div class="col-sm-2"> <br>
+             <label style="margin-left:1px; color:black; font-size: 26px; font-weight: bold;">Output CSV File</label>
+         </div>
+
+      <div class="col-sm-2"> <br>
+            <form action="/Down_Bulk_File" method="GET">
+          <button style="margin-left:1px; background-color: #4CAF50; font-size: 20px; font-weight: bold;" type="submit" name="" >Download</button>
+            </form> </div>
+
+    </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img1 = document.getElementById("myImg01");
+var img2 = document.getElementById("myImg02");
+var img3 = document.getElementById("myImg03");
+var img4 = document.getElementById("myImg04");
+var modalImg = document.getElementById("img001");
+var captionText = document.getElementById("caption");
+
+img1.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img2.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img3.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+img4.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+
+    </body>
+</html>
