@@ -27,4 +27,19 @@ pip install -r requirements.txt
  2) Home credit Default dataset
  3) Mortgage Dataset
  4) Marketing Dataset
- 5) Loan Acceptance Dataset,and Many
+ 5) Loan Acceptance Dataset
+ 6) Loan Eligibility Dataset
+ 7) Loan Risk Dataset
+
+
+### Technologies Used
+
+In this whole ploject we have used the following python libraries extensively
+
+![flask](https://user-images.githubusercontent.com/53222813/91666223-b7959f00-eb18-11ea-9c27-46badbab0367.png)
+![html](https://user-images.githubusercontent.com/53222813/91666224-b8c6cc00-eb18-11ea-9735-27ba3d0493e8.png)
+![panda](https://user-images.githubusercontent.com/53222813/91666225-b95f6280-eb18-11ea-84cf-59e719287594.png)
+![sklearn](https://user-images.githubusercontent.com/53222813/91666226-b95f6280-eb18-11ea-87e1-e26bc87f8ba8.png)
+![download (1)](https://user-images.githubusercontent.com/53222813/91881104-a1195000-ec9e-11ea-9abd-6c16653603f9.png)
+![download](https://user-images.githubusercontent.com/53222813/91881107-a37baa00-ec9e-11ea-8761-2cba0133f2b7.png)
+![download](https://user-images.githubusercontent.com/53222813/91887750-cdd26500-eca8-11ea-83c4-2d5f999418e7.png)
