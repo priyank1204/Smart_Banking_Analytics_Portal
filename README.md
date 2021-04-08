@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ```
 
  ## Dataset details
- As this is an end to end banking portal,so there are more than one datasets that have been used in this. The dataset for this portal are collected from different repositeries like kaggle ,UCI etc.
+ As this is an end to end banking portal,so there are more than one datasets that have been used in this. The dataset for this portal are collected from different repositeries  like kaggle ,UCI etc.
  The list of the datasets that i have used for this portal are as follows:
  
  1) Fraud Detection Banksim Dataset from Kaggle
@@ -30,6 +30,19 @@ pip install -r requirements.txt
  5) Loan Acceptance Dataset
  6) Loan Eligibility Dataset
  7) Loan Risk Dataset
+
+## UI Overview
+In this Banking portal,i have build a UI which ic user friendly in all aspects. If a person from non-technical background wants to use the portal ,then they can also do so.In the UI i have added many functionalities as given below:
+
+### Multi Purpose Portal:
+As i have mentioned before that this project is and end to end banking portal which has many functionalities based on differet datasets so they are added in UI as well as shown below:
+
+![2](https://user-images.githubusercontent.com/53222813/114068303-67a36580-98bb-11eb-8e92-6f1832fad90f.JPG)
+
+### Single Input:
+If the user wants to predict only for a single record then he can enter the values for the same and get the prediction . Here in below i have shown a sample of single input where user can give input for these values . Here is Fraud Detection sample:
+
+![4](https://user-images.githubusercontent.com/53222813/114068676-cc5ec000-98bb-11eb-82d6-44518923a773.JPG)
 
 
 ### Technologies Used
