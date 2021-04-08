@@ -45,11 +45,11 @@ If the user wants to predict only for a single record then he can enter the valu
 ![4](https://user-images.githubusercontent.com/53222813/114068676-cc5ec000-98bb-11eb-82d6-44518923a773.JPG)    
 
 ### Bulk user prediction:
-#### Also there is an option of multiple input , if the user wants to predict for multiple reocrds then they can go with bulk prediction option . Here the user has to give a file input and then they can get the output for the same. 
+* Also there is an option of multiple input , if the user wants to predict for multiple reocrds then they can go with bulk prediction option . Here the user has to give a file input and then they can get the output for the same. 
 
-#### Here is also option of a report with visulization of the data by which the particular modle is trained , if user wants to get insights about the data then he can go with the visualization option.
+* Here is also option of a report with visulization of the data by which the particular modle is trained , if user wants to get insights about the data then he can go with the visualization option.
 
-#### performance metrics of the trained model are also displayed on the screen if in case user wants to know about the model performance.  
+* performance metrics of the trained model are also displayed on the screen if in case user wants to know about the model performance.  
 
 
  
