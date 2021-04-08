@@ -53,6 +53,10 @@ If the user wants to predict only for a single record then he can enter the valu
 
 ![3](https://user-images.githubusercontent.com/53222813/114070678-ded9f900-98bd-11eb-88df-e767811deea3.JPG)
 
+### Output :
+If the user goes with Bulk prediction then after submitting the file the output will be shown in this way as given below:
+
+![6](https://user-images.githubusercontent.com/53222813/114071940-50ff0d80-98bf-11eb-8c46-0a3e82f65027.JPG)
 
  
 ### Technologies Used
