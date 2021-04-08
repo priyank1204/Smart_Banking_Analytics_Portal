@@ -56,6 +56,12 @@ If the user wants to predict only for a single record then he can enter the valu
 ### Output :
 If the user goes with Bulk prediction then after submitting the file the output will be shown in this way as given below:
 
+* After getting the output for the input file the user will get the predictions and along with that he can get graphs for the bulk output .
+*
+* Also the user can download the predictions in form of a csv file.
+
+* Also to get the full insights about the bulk input data he can go with the option of full data visuals.  
+
 ![6](https://user-images.githubusercontent.com/53222813/114071940-50ff0d80-98bf-11eb-8c46-0a3e82f65027.JPG)
 
  
