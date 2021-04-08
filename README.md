@@ -6,7 +6,6 @@
   * [Installation](#installation)
   * [Dataset details](#Dataset-details)
   * [UI overview](#UI-overview)
-  * [Deployement Link](#Deployement-Link)
   * [Technologies Used](#technologies-used)
 
 ### Overview
