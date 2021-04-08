@@ -51,6 +51,7 @@ If the user wants to predict only for a single record then he can enter the valu
 
 * performance metrics of the trained model are also displayed on the screen if in case user wants to know about the model performance.  
 
+![3](https://user-images.githubusercontent.com/53222813/114070458-a89c7980-98bd-11eb-8657-fdcc953bc808.JPG)
 
  
 ### Technologies Used
