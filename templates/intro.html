@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INTRO</title>
+</head>
+<body style=" background-image: url('static/dashb.jpg'); background-repeat:no-repeat; background-size: 1800px 850px;">
+</br> </br> </br> </br> </br> </br>
+</br> </br> </br> </br> </br> </br>
+</br> </br> </br> </br> </br> </br>
+</br> </br> </br> </br> </br> </br></br> </br> </br> </br> </br> </br></br> </br> </br>
+<form class="f1" action="home" method="POST">
+            <button style="font-size:30px;" id="new2"><span>Next</span></button>
+		</form>
+
+<style>
+
+#new2   {
+  border-radius: 50%;
+  position: absolute;
+  right: 150px;
+  width: 180px;
+  height: 100px;
+  border: 3px solid green;
+  font-weight: bold;
+
+
+  background-color: #00ccff;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#new2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#new2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#new2:hover span {
+  padding-right: 25px;
+}
+
+#new2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</body>
+</html>
