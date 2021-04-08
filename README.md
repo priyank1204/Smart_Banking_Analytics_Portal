@@ -38,6 +38,8 @@ As i have mentioned before that this project is and end to end banking portal wh
 
 ![2](https://user-images.githubusercontent.com/53222813/114068303-67a36580-98bb-11eb-8e92-6f1832fad90f.JPG)
 
+![3](https://user-images.githubusercontent.com/53222813/114070678-ded9f900-98bd-11eb-88df-e767811deea3.JPG)
+
 ### Single Input:
 If the user wants to predict only for a single record then he can enter the values for the same and get the prediction . Here in below i have shown a sample of single input where user can give input for these values . Here is Fraud Detection sample:
 
@@ -50,7 +52,8 @@ If the user wants to predict only for a single record then he can enter the valu
 
 * Performance metrics of the trained model are also displayed on the screen if in case user wants to know about the model performance. 
 
-![3](https://user-images.githubusercontent.com/53222813/114070678-ded9f900-98bd-11eb-88df-e767811deea3.JPG)
+![5](https://user-images.githubusercontent.com/53222813/114072773-3d07db80-98c0-11eb-9d44-dee5dc677f4a.JPG)
+
 
 ### Output :
 If the user goes with Bulk prediction then after submitting the file the output will be shown in this way as given below:
