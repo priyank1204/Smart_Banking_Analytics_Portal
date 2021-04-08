@@ -49,7 +49,7 @@ If the user wants to predict only for a single record then he can enter the valu
 
 * Here is also option of a report with visulization of the data by which the particular modle is trained , if user wants to get insights about the data then he can go with the visualization option.
 
-* performance metrics of the trained model are also displayed on the screen if in case user wants to know about the model performance. 
+* Performance metrics of the trained model are also displayed on the screen if in case user wants to know about the model performance. 
 
 ![3](https://user-images.githubusercontent.com/53222813/114070678-ded9f900-98bd-11eb-88df-e767811deea3.JPG)
 
@@ -57,7 +57,7 @@ If the user wants to predict only for a single record then he can enter the valu
 If the user goes with Bulk prediction then after submitting the file the output will be shown in this way as given below:
 
 * After getting the output for the input file the user will get the predictions and along with that he can get graphs for the bulk output .
-*
+
 * Also the user can download the predictions in form of a csv file.
 
 * Also to get the full insights about the bulk input data he can go with the option of full data visuals.  
