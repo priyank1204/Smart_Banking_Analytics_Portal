@@ -42,7 +42,8 @@ As i have mentioned before that this project is and end to end banking portal wh
 ### Single Input:
 If the user wants to predict only for a single record then he can enter the values for the same and get the prediction . Here in below i have shown a sample of single input where user can give input for these values . Here is Fraud Detection sample:
 
-![4](https://user-images.githubusercontent.com/53222813/114068676-cc5ec000-98bb-11eb-82d6-44518923a773.JPG)
+![4](https://user-images.githubusercontent.com/53222813/114068676-cc5ec000-98bb-11eb-82d6-44518923a773.JPG)     ![3](https://user-images.githubusercontent.com/53222813/114068847-f7e1aa80-98bb-11eb-95d9-1040159a64cb.JPG)
+
 
 
 ### Technologies Used
