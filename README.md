@@ -31,7 +31,7 @@ pip install -r requirements.txt
  7) Loan Risk Dataset
 
 ## UI Overview
-In this Banking portal,i have build a UI which ic user friendly in all aspects. If a person from non-technical background wants to use the portal ,then they can also do so.In the UI i have added many functionalities as given below:
+In this Banking portal,i have build an UI which is user friendly in all aspects. If a person from non-technical background wants to use the portal ,then they can also do so.In the UI i have added many functionalities as given below:
 
 ### Multi Purpose Portal:
 As i have mentioned before that this project is and end to end banking portal which has many functionalities based on differet datasets so they are added in UI as well as shown below:
